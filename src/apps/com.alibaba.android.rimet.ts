@@ -7,7 +7,7 @@ export default defineGkdApp({
     {
       key: 1,
       name: '局部广告-消息列表上方广告',
-      quickFind: true,
+      fastQuery: true,
       matchTime: 10000,
       actionMaximum: 1,
       resetMatch: 'app',
@@ -23,7 +23,7 @@ export default defineGkdApp({
     {
       key: 2,
       name: '功能类-文件即将过期提示',
-      quickFind: true,
+      fastQuery: true,
       matchTime: 10000,
       actionMaximum: 1,
       resetMatch: 'app',
@@ -42,7 +42,7 @@ export default defineGkdApp({
 
       key: 3,
       actionMaximum: 1,
-      quickFind: true,
+      fastQuery: true,
       activityIds:
         'com.alibaba.android.dingtalk.photoui.activitys.AlbumActivity',
       rules: [
@@ -60,7 +60,7 @@ export default defineGkdApp({
     {
       key: 4,
       name: '更新提示',
-      quickFind: true,
+      fastQuery: true,
       matchTime: 10000,
       actionMaximum: 1,
       resetMatch: 'app',
@@ -80,7 +80,7 @@ export default defineGkdApp({
     {
       key: 5,
       name: '功能类-扫码自动登录桌面版',
-      quickFind: true,
+      fastQuery: true,
       matchTime: 10000,
       actionMaximum: 1,
       resetMatch: 'activity',

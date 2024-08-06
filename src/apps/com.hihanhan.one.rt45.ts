@@ -7,7 +7,7 @@ export default defineGkdApp({
     {
       key: 1,
       name: '全屏广告',
-      quickFind: true,
+      fastQuery: true,
       rules: '[vid="ivClose"]',
       snapshotUrls: 'https://i.gkd.li/i/14099393',
     },

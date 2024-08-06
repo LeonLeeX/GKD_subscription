@@ -7,7 +7,7 @@ export default defineGkdApp({
     {
       key: 2,
       name: '功能类-应用更新页面-点击[查看更多]',
-      quickFind: true,
+      fastQuery: true,
       actionMaximum: 1,
       resetMatch: 'app',
       rules: [
@@ -25,7 +25,7 @@ export default defineGkdApp({
       key: 3,
       name: '全屏广告-热门应用推荐弹窗',
       desc: '点击[直接进入]',
-      quickFind: true,
+      fastQuery: true,
       actionMaximum: 1,
       resetMatch: 'app',
       rules: [

@@ -7,7 +7,7 @@ export default defineGkdApp({
     {
       key: 1,
       name: '综合广告-视频播放暂停时的广告',
-      quickFind: true,
+      fastQuery: true,
       activityIds: 'com.youku.ui.activity.DetailActivity',
       rules: [
         {
@@ -30,7 +30,7 @@ export default defineGkdApp({
     {
       key: 3,
       name: '全屏广告-视频推荐弹窗',
-      quickFind: true,
+      fastQuery: true,
       activityIds: 'com.youku.vip.wrapper.VipHomeActivity',
       rules: '[id="com.youku.phone:id/closeView"][desc="关闭弹层"]',
       snapshotUrls: 'https://i.gkd.li/i/12701029',
@@ -43,7 +43,7 @@ export default defineGkdApp({
         {
           key: 0,
           name: '历史记录/搜索页面广告',
-          quickFind: true,
+          fastQuery: true,
           activityIds: [
             'com.youku.android.youkuhistory.activity.HistoryActivity',
             'com.soku.searchsdk.activity.SearchActivity',

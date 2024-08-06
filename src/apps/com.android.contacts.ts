@@ -10,7 +10,7 @@ export default defineGkdApp({
       rules: [
         {
           key: 0,
-          quickFind: true,
+          fastQuery: true,
           activityIds:
             'com.mobile.businesshall.ui.common.RecommendPopupActivity',
           matches: '[vid="img_close_btn"][clickable=true][visibleToUser=true]',

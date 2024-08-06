@@ -13,7 +13,7 @@ export default defineGkdApp({
         'com.twitter.app.profiles.ProfileActivity',
       ],
       actionCd: 3000, // https://github.com/gkd-kit/subscription/issues/832
-      quickFind: true,
+      fastQuery: true,
       rules: [
         {
           key: 0,
@@ -50,7 +50,7 @@ export default defineGkdApp({
       key: 2,
       name: '信息流广告-帖子详情页、搜索页',
       desc: '点击右上角关闭,点击屏蔽用户,确认屏蔽.点击[我不喜欢]会返回主页,因此点击[屏蔽]',
-      quickFind: true,
+      fastQuery: true,
       activityIds: [
         'com.twitter.tweetdetail.TweetDetailActivity',
         'com.twitter.android.search.implementation.results.SearchActivity',
@@ -115,7 +115,7 @@ export default defineGkdApp({
       key: 3,
       name: '信息流广告-用户资料页',
       desc: '点击右上角关闭,点击我不喜欢',
-      quickFind: true,
+      fastQuery: true,
       activityIds: ['com.twitter.app.profiles.ProfileActivity'],
       actionCd: 3000,
       rules: [
@@ -152,7 +152,7 @@ export default defineGkdApp({
     {
       key: 4,
       name: '评价弹窗',
-      quickFind: true,
+      fastQuery: true,
       matchTime: 10000,
 
       rules: [
@@ -167,7 +167,7 @@ export default defineGkdApp({
       key: 5,
       name: '权限提示-通知权限',
       desc: '点击"Not now"',
-      quickFind: true,
+      fastQuery: true,
       matchTime: 10000,
       actionMaximum: 1,
       resetMatch: 'app',
@@ -182,7 +182,7 @@ export default defineGkdApp({
     {
       key: 6,
       name: '功能类-自动翻译',
-      quickFind: true,
+      fastQuery: true,
       activityIds: 'com.twitter.tweetdetail.TweetDetailActivity',
       rules: '[text^="翻译"][vid="translation_link"]',
       snapshotUrls: [
@@ -193,7 +193,7 @@ export default defineGkdApp({
     {
       key: 7,
       name: '功能类-自动显示更多帖子',
-      quickFind: true,
+      fastQuery: true,
       activityIds: 'com.twitter.app.main.MainActivity',
       rules: '[vid="gap_text"][text="显示更多帖子"]',
       snapshotUrls: 'https://i.gkd.li/i/14189897',

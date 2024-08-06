@@ -7,7 +7,7 @@ export default defineGkdApp({
     {
       key: 1,
       name: '全屏广告-创作祝福弹窗',
-      quickFind: true,
+      fastQuery: true,
       matchTime: 10000,
       resetMatch: 'app',
       actionMaximum: 1,
@@ -24,7 +24,7 @@ export default defineGkdApp({
     {
       key: 3,
       name: '局部广告-皮肤试用页-卡片广告',
-      quickFind: true,
+      fastQuery: true,
       activityIds: 'com.baidu.input.ImeSkinTryActivity',
       rules: '[vid="close_btn"]',
       snapshotUrls: 'https://i.gkd.li/i/14205945',

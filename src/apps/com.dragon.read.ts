@@ -32,7 +32,7 @@ export default defineGkdApp({
         },
         {
           key: 3,
-          quickFind: true,
+          fastQuery: true,
           matches: '[text="关闭此条广告"]',
           exampleUrls:
             'https://m.gkd.li/57941037/cf9d0574-dc89-4f03-ba01-eb9bcc97925f',
@@ -80,7 +80,7 @@ export default defineGkdApp({
           key: 0,
           name: '电商惊喜券',
           activityIds: 'com.dragon.read.pages.main.MainFragmentActivity',
-          quickFind: true,
+          fastQuery: true,
           matches:
             '@LynxFlattenUI[id=null][text=""][clickable=true] - [text="去逛商城"] -4 [text$="电商惊喜券"]',
           snapshotUrls: 'https://i.gkd.li/i/12910159',
@@ -88,7 +88,7 @@ export default defineGkdApp({
         {
           key: 1,
           name: '爆款好物一分购',
-          quickFind: true,
+          fastQuery: true,
           activityIds: 'com.dragon.read.pages.main.MainFragmentActivity',
           matches:
             '@ImageView[clickable=true] <2 LinearLayout[childCount=2] < [id="android:id/content"][childCount=1]',
@@ -97,7 +97,7 @@ export default defineGkdApp({
         {
           key: 2,
           name: '抽奖赢好礼',
-          quickFind: true,
+          fastQuery: true,
           activityIds: 'com.dragon.read.pages.main.MainFragmentActivity',
           matches: '@LynxFlattenUI[clickable=true] - [text="前往抽奖"]',
           exampleUrls:
@@ -107,7 +107,7 @@ export default defineGkdApp({
         {
           key: 3,
           name: '签到弹窗',
-          quickFind: true,
+          fastQuery: true,
           activityIds: 'com.dragon.read.pages.main.MainFragmentActivity',
           matches:
             '@LynxFlattenUI[clickable=true][visibleToUser=true][text=""] -27 FlattenUIText[text^="立即签到"]',
@@ -120,7 +120,7 @@ export default defineGkdApp({
     {
       key: 4,
       name: '功能类-阅读页面-关注作者',
-      quickFind: true,
+      fastQuery: true,
       rules: [
         {
           key: 0,
@@ -133,7 +133,7 @@ export default defineGkdApp({
     {
       key: 5,
       name: '分段广告-阅读页面广告',
-      quickFind: true,
+      fastQuery: true,
       activityIds: 'com.dragon.read.reader.ui.ReaderActivity',
       rules: [
         {
@@ -181,7 +181,7 @@ export default defineGkdApp({
       key: 12,
       name: '全屏广告-阅读翻页时的全屏广告',
       desc: '点击右上角【关闭】',
-      quickFind: true,
+      fastQuery: true,
       activityIds: 'com.dragon.read.reader.ui.ReaderActivity',
       rules: 'TextView[text="广告"] +2 Button[id="com.dragon.read:id/close"]',
       snapshotUrls: 'https://i.gkd.li/i/13191156',
@@ -206,7 +206,7 @@ export default defineGkdApp({
     {
       key: 16,
       name: '评价提示',
-      quickFind: true,
+      fastQuery: true,
       resetMatch: 'app',
       actionMaximum: 1,
       rules: '@ImageView[clickable=true] +3 * > [text="五星好评"]',
@@ -216,7 +216,7 @@ export default defineGkdApp({
       key: 17,
       name: '全屏广告-VIP免费领弹窗',
       desc: '点击x',
-      quickFind: true,
+      fastQuery: true,
       actionMaximum: 1,
       resetMatch: 'app',
       activityIds: 'com.dragon.read.pages.main.MainFragmentActivity',
@@ -231,7 +231,7 @@ export default defineGkdApp({
       desc: '点击关闭',
       rules: [
         {
-          quickFind: true,
+          fastQuery: true,
           activityIds: 'com.dragon.read.reader.ui.ReaderActivity',
           matches:
             '@ImageView[clickable=true][visibleToUser=true] <n * > [text="领取限时福利"]',

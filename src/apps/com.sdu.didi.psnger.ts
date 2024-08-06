@@ -21,7 +21,7 @@ export default defineGkdApp({
     {
       key: 2,
       name: '全屏广告-优惠券',
-      quickFind: true,
+      fastQuery: true,
       activityIds: [
         'com.didi.sdk.app.launch.splash.SplashActivity',
         'com.didi.sdk.app.MainActivity',

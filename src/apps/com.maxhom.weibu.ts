@@ -49,7 +49,7 @@ export default defineGkdApp({
       name: '权限提示-定位权限',
       desc: '自动点击取消',
 
-      quickFind: true,
+      fastQuery: true,
       activityIds: [
         'com.maxhom.weibu.tool.home.activity.ToolBottleActivity',
         'com.maxhom.weibu.tool.msg.MyBottleActivity',

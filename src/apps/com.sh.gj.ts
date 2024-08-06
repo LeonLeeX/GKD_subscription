@@ -11,7 +11,7 @@ export default defineGkdApp({
         {
           key: 0,
           name: '腾讯SDK',
-          quickFind: true,
+          fastQuery: true,
           activityIds: [
             'com.sh.gj.MainActivity',
             'com.sh.gj.activity.LineDetailActivity',
@@ -28,7 +28,7 @@ export default defineGkdApp({
       key: 2,
       name: '功能类-退出软件时的确认弹窗',
       desc: '点击[确认退出]',
-      quickFind: true,
+      fastQuery: true,
       activityIds: 'com.sh.gj.MainActivity',
       rules: '[text="确认退出"]',
       exampleUrls:

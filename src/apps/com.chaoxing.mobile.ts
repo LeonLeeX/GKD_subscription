@@ -9,7 +9,7 @@ export default defineGkdApp({
       name: '开启消息通知',
       desc: '自动点击关闭',
 
-      quickFind: true,
+      fastQuery: true,
       activityIds: 'com.chaoxing.mobile.main.ui.MainTabActivity',
       rules: '[id="com.chaoxing.mobile:id/vNotificationItemClose"]',
       snapshotUrls: 'https://i.gkd.li/i/13197374',

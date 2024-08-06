@@ -8,7 +8,7 @@ export default defineGkdApp({
       key: 10,
 
       name: '跳过实体号码链接',
-      quickFind: true,
+      fastQuery: true,
       matchTime: 10000,
       actionMaximum: 1,
       resetMatch: 'app',

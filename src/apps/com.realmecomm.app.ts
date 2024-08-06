@@ -8,7 +8,7 @@ export default defineGkdApp({
       key: 1,
       name: '功能类-自动点击签到',
       desc: '自动点击签到',
-      quickFind: true,
+      fastQuery: true,
       resetMatch: 'app',
       actionMaximum: 1,
       activityIds: 'com.android.realme2.home.view.MainActivity',

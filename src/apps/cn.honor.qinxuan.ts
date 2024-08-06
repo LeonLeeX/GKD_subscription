@@ -6,7 +6,7 @@ export default defineGkdApp({
   groups: [
     {
       key: 1,
-      quickFind: true,
+      fastQuery: true,
       name: '全屏广告-首页广告弹窗',
       desc: '点击X',
       rules: [
@@ -19,7 +19,7 @@ export default defineGkdApp({
     {
       key: 2,
       name: '权限提示-通知权限',
-      quickFind: true,
+      fastQuery: true,
       matchTime: 10000,
       actionMaximum: 1,
       resetMatch: 'app',

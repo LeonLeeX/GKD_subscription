@@ -9,7 +9,7 @@ export default defineGkdApp({
       name: '局部广告-首页信息流广告',
       rules: [
         {
-          quickFind: true,
+          fastQuery: true,
           activityIds:
             'com.xueqiu.android.mainnesting.view.MainNestingActivity',
           matches: '[id="com.xueqiu.android:id/ad_close"]',
@@ -25,7 +25,7 @@ export default defineGkdApp({
       rules: [
         {
           key: 0,
-          quickFind: true,
+          fastQuery: true,
           activityIds: 'com.xueqiu.android.community.StatusDetailActivity',
           matches: '[id="com.xueqiu.android:id/ad_card_close"]',
           exampleUrls:

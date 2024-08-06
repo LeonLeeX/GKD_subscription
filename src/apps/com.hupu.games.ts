@@ -11,7 +11,7 @@ export default defineGkdApp({
         'com.hupu.android.bbs.detail.PostDetailActivity',
         'com.hupu.topic.TopicActivity',
       ],
-      quickFind: true,
+      fastQuery: true,
       name: '推荐流广告',
       desc: '点击卡片右上角广告文字,出现广告反馈,点击屏蔽该广告',
       rules: [

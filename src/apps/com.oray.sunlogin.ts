@@ -8,7 +8,7 @@ export default defineGkdApp({
       key: 0,
       name: '全屏广告-瓜子会员弹窗',
       desc: '点击右上角[关闭]',
-      quickFind: true,
+      fastQuery: true,
       activityIds: 'com.oray.sunlogin.application.Main',
       rules: '[id="com.oray.sunlogin:id/close"][text="关闭"]',
       snapshotUrls: [
@@ -23,7 +23,7 @@ export default defineGkdApp({
       key: 2,
       name: '功能类-设备列表-卡片广告',
       activityIds: 'com.oray.sunlogin.application.Main',
-      quickFind: true,
+      fastQuery: true,
       rules: '[id="com.oray.sunlogin:id/fl_close_advertise"]',
       snapshotUrls: 'https://i.gkd.li/i/13207785',
       exampleUrls:
@@ -32,7 +32,7 @@ export default defineGkdApp({
     {
       key: 3,
       name: '功能类-退出app提示',
-      quickFind: true,
+      fastQuery: true,
       rules: '[text="是否确认退出向日葵？"] + LinearLayout > [vid="button_ok"]',
       snapshotUrls: 'https://i.gkd.li/i/13927148',
     },

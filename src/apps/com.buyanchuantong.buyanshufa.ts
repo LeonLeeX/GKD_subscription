@@ -7,7 +7,7 @@ export default defineGkdApp({
     {
       key: 3,
       name: '功能介绍',
-      quickFind: true,
+      fastQuery: true,
       matchTime: 10000,
       actionMaximum: 1,
       resetMatch: 'activity',

@@ -8,7 +8,7 @@ export default defineGkdApp({
       key: 1,
       name: '全屏广告-超级补贴日弹窗',
       desc: '点击X',
-      quickFind: true,
+      fastQuery: true,
       rules:
         '[id="android:id/content"] >2 [id="com.huodao.hdphone:id/dialog_close"]',
       snapshotUrls: 'https://i.gkd.li/i/13927567',
@@ -17,7 +17,7 @@ export default defineGkdApp({
       key: 2,
       name: '局部广告-卡片广告',
       desc: '点击关闭',
-      quickFind: true,
+      fastQuery: true,
       activityIds: 'com.huodao.hdphone.mvp.view.main.NewMainActivity',
       rules: '[vid="iv_recycle_close"]',
       exampleUrls:

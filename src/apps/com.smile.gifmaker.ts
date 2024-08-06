@@ -61,7 +61,7 @@ export default defineGkdApp({
         {
           key: 1,
           actionCdKey: 0,
-          quickFind: true,
+          fastQuery: true,
           matches:
             'ViewGroup[childCount=3] > [text="隐藏"][visibleToUser=true]',
           snapshotUrls: 'https://i.gkd.li/i/14001536',

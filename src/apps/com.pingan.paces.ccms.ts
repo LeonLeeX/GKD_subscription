@@ -7,7 +7,7 @@ export default defineGkdApp({
     {
       key: 1,
       name: '全屏广告-首页-权益/抽奖弹窗',
-      quickFind: true,
+      fastQuery: true,
       resetMatch: 'app',
       actionMaximum: 1,
       activityIds: 'com.pingan.launcher.activity.LauncherActivity',

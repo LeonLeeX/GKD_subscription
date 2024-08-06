@@ -7,7 +7,7 @@ export default defineGkdApp({
     {
       key: 1,
       name: '广告弹窗',
-      quickFind: true,
+      fastQuery: true,
       activityIds: 'com.vmos.pro.activities.main.MainActivity',
       rules: '[id="com.vmos.pro:id/iv_dismiss"] ',
       snapshotUrls: 'https://i.gkd.li/i/13536416',

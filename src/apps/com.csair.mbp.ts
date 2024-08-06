@@ -10,7 +10,7 @@ export default defineGkdApp({
       desc: '点击【暂不开启】',
       actionMaximum: 1,
       resetMatch: 'app',
-      quickFind: true,
+      fastQuery: true,
       activityIds: 'com.csair.mbp.CSMBPActivity',
       rules: '[text="开启长辈版"] -2 [text="暂不开启"]',
       snapshotUrls: 'https://i.gkd.li/i/14810700',
@@ -18,7 +18,7 @@ export default defineGkdApp({
     {
       key: 3,
       name: '全屏广告-首页-弹窗广告',
-      quickFind: true,
+      fastQuery: true,
       activityIds: 'com.csair.mbp.CSMBPActivity',
       rules: '[id="com.csair.mbp:id/close_btn"]',
       snapshotUrls: 'https://i.gkd.li/i/13197497',

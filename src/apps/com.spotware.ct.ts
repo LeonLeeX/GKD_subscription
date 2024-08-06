@@ -7,7 +7,7 @@ export default defineGkdApp({
     {
       key: 1,
       name: '功能类-我不是美国公民弹窗',
-      quickFind: true,
+      fastQuery: true,
       activityIds: 'mobile.droid.ctrader.views.main.MainActivity',
       rules: [
         {

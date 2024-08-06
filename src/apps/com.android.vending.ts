@@ -7,7 +7,7 @@ export default defineGkdApp({
     {
       key: 1,
       name: '通知提示-使用Points获得奖励弹窗',
-      quickFind: true,
+      fastQuery: true,
       matchTime: 10000,
       resetMatch: 'app',
       actionMaximum: 1,
@@ -20,7 +20,7 @@ export default defineGkdApp({
       key: 2,
       name: '全屏广告-[体验 Google Play Pass]弹窗',
       desc: '点击[以后再说]',
-      quickFind: true,
+      fastQuery: true,
       actionMaximum: 1,
       resetMatch: 'app',
       rules: [

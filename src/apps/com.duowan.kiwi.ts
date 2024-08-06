@@ -11,7 +11,7 @@ export default defineGkdApp({
       rules: [
         {
           key: 0,
-          quickFind: true,
+          fastQuery: true,
           matches: '[id="com.duowan.kiwi:id/ad_close"]',
           snapshotUrls: [
             'https://i.gkd.li/i/12901045',
@@ -20,7 +20,7 @@ export default defineGkdApp({
         },
         {
           key: 1,
-          quickFind: true,
+          fastQuery: true,
           matches: '[id="com.duowan.kiwi:id/game_header_close"]',
           snapshotUrls: [
             'https://i.gkd.li/i/13395604',
@@ -45,7 +45,7 @@ export default defineGkdApp({
       key: 3,
       name: '更新提示',
       activityIds: 'com.duowan.kiwi.homepage.Homepage',
-      quickFind: true,
+      fastQuery: true,
       matchTime: 10000,
       actionMaximum: 1,
       resetMatch: 'app',
@@ -73,7 +73,7 @@ export default defineGkdApp({
       key: 5,
       name: '功能类-root提示',
       desc: '您的设备已经被ROOT',
-      quickFind: true,
+      fastQuery: true,
       matchTime: 10000,
       actionMaximum: 1,
       resetMatch: 'app',

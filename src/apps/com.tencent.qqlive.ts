@@ -7,7 +7,7 @@ export default defineGkdApp({
     {
       key: 0,
       name: '开屏广告',
-      quickFind: true,
+      fastQuery: true,
       matchTime: 10000,
       actionMaximum: 1,
       resetMatch: 'app',
@@ -92,7 +92,7 @@ export default defineGkdApp({
         },
         {
           key: 6,
-          quickFind: true,
+          fastQuery: true,
           matches: '[id="com.tencent.qqlive:id/feed_icon"][clickable=true]',
           exampleUrls:
             'https://m.gkd.li/57941037/42013a93-fb12-4747-92e0-95f5028eb8e5',
@@ -102,7 +102,7 @@ export default defineGkdApp({
         {
           preKeys: 6,
           key: 96,
-          quickFind: true,
+          fastQuery: true,
           matches:
             '[id="com.tencent.qqlive:id/ad_feed_back_dislike"][clickable=true]',
           exampleUrls:
@@ -119,7 +119,7 @@ export default defineGkdApp({
         {
           key: 98,
           name: '广告反馈卡片-选择原因',
-          quickFind: true,
+          fastQuery: true,
           activityIds: [
             'com.tencent.qqlive.qaduikit.common.dialog.feedback.variable.QAdFeedbackVariableDislikeItemDialog',
             'com.tencent.qqlive.ona.activity.SplashHomeActivity',
@@ -139,7 +139,7 @@ export default defineGkdApp({
           preKeys: [98],
           key: 99,
           name: '广告反馈卡片-确认原因',
-          quickFind: true,
+          fastQuery: true,
           activityIds: [
             'com.tencent.qqlive.qaduikit.common.dialog.feedback.variable.QAdFeedbackVariableDislikeItemDialog',
             'com.tencent.qqlive.ona.activity.SplashHomeActivity',
@@ -165,7 +165,7 @@ export default defineGkdApp({
         {
           key: 0,
           name: '全屏广告',
-          quickFind: true,
+          fastQuery: true,
           matches:
             '@[text$="跳过广告"][clickable=true] < LinearLayout > [text="VIP可关闭该广告"]',
           snapshotUrls: [
@@ -183,7 +183,7 @@ export default defineGkdApp({
         {
           key: 2,
           name: '全屏广告2',
-          quickFind: true,
+          fastQuery: true,
           matches: '@[text$="关闭广告"][clickable=true]',
           snapshotUrls: 'https://i.gkd.li/i/13526547',
         },
@@ -201,7 +201,7 @@ export default defineGkdApp({
       name: '全屏广告-首页-广告弹窗',
       resetMatch: 'app',
       actionMaximum: 1,
-      quickFind: true,
+      fastQuery: true,
       rules: [
         {
           key: 0,
@@ -231,7 +231,7 @@ export default defineGkdApp({
         {
           key: 0,
           actionMaximum: 1,
-          quickFind: true,
+          fastQuery: true,
           matches: 'LinearLayout > @[text="以后再说"] + [text="好的"]',
           snapshotUrls: 'https://i.gkd.li/i/12700139',
         },

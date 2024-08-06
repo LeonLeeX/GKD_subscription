@@ -10,7 +10,7 @@ export default defineGkdApp({
       rules: [
         {
           key: 1,
-          quickFind: true,
+          fastQuery: true,
           activityIds: 'com.yxcorp.gifshow.HomeActivity',
           matches:
             '@ImageView[clickable=true] -n ViewGroup >2 [text~="[0-9]+.?[0-9]*"] + ViewGroup > [text$="元"]',
@@ -24,7 +24,7 @@ export default defineGkdApp({
     {
       key: 2,
       name: '功能类-朋友推荐弹窗',
-      quickFind: true,
+      fastQuery: true,
       activityIds: 'com.yxcorp.gifshow.HomeActivity',
       rules: [
         {

@@ -13,7 +13,7 @@ export default defineGkdApp({
       ],
       matchTime: 10000,
       actionMaximum: 1,
-      quickFind: true,
+      fastQuery: true,
       rules: '[vid="iv_ad_free_gif"] + * > [text="关闭"]',
       snapshotUrls: 'https://i.gkd.li/i/14696860',
     },
@@ -28,7 +28,7 @@ export default defineGkdApp({
       rules: [
         {
           key: 0,
-          quickFind: true,
+          fastQuery: true,
           matches: '[text*="跳过"][text.length<10][visibleToUser=true]',
         },
         {
@@ -38,7 +38,7 @@ export default defineGkdApp({
         },
         {
           key: 1,
-          quickFind: true,
+          fastQuery: true,
           matches:
             'FrameLayout > FrameLayout[childCount>2] > @View[clickable=true] + TextView <<n [id="com.mfcloudcalculate.networkdisk:id/frame_ad_splash_container"]',
           snapshotUrls: 'https://i.gkd.li/i/14018247',

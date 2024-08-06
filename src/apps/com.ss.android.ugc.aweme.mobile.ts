@@ -8,7 +8,7 @@ export default defineGkdApp({
       key: 1,
       name: '功能类-发现通讯录好友',
       desc: '点击【暂时不要】',
-      quickFind: true,
+      fastQuery: true,
       resetMatch: 'app',
       actionMaximum: 1,
       rules: '[text="发现好友"] -2 [text="暂时不要"]',
@@ -23,7 +23,7 @@ export default defineGkdApp({
       resetMatch: 'app',
       rules: [
         {
-          quickFind: true,
+          fastQuery: true,
           activityIds: 'com.ss.android.ugc.aweme.main.MainActivity',
           matches: '[text^="你还没有开启位置权限"] +2 * > [text="以后再说"]',
           exampleUrls:

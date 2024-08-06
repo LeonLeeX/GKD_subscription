@@ -8,7 +8,7 @@ export default defineGkdApp({
       key: 5,
       name: '通知弹窗',
 
-      quickFind: true,
+      fastQuery: true,
       activityIds: 'com.loyea.adnmb.activity.MainActivity',
       rules: 'LinearLayout > Button[text="确定"]',
       snapshotUrls: 'https://i.gkd.li/i/13623450',

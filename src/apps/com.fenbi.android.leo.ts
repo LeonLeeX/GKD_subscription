@@ -7,7 +7,7 @@ export default defineGkdApp({
     {
       key: 1,
       name: '评分弹窗',
-      quickFind: true,
+      fastQuery: true,
       actionMaximum: 1,
       activityIds:
         'com.fenbi.android.leo.imgsearch.sdk.activity.NewCheckCameraActivity',

@@ -26,7 +26,7 @@ export default defineGkdApp({
     {
       key: 1,
       name: '弹窗广告',
-      quickFind: true,
+      fastQuery: true,
       rules: '[id="com.byfen.market:id/idIvClose"]',
       snapshotUrls: 'https://i.gkd.li/i/13801613',
     },
@@ -46,7 +46,7 @@ export default defineGkdApp({
           key: 1,
           preKeys: 0,
           name: '穿山甲SDK-点击【不感兴趣】',
-          quickFind: true,
+          fastQuery: true,
           matches: '@LinearLayout > [text="不感兴趣"]',
           snapshotUrls: 'https://i.gkd.li/i/13771773',
         },

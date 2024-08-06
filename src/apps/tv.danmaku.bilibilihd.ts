@@ -10,7 +10,7 @@ export default defineGkdApp({
       matchTime: 10000,
       actionMaximum: 1,
       resetMatch: 'app',
-      quickFind: true,
+      fastQuery: true,
       rules: '[id="tv.danmaku.bilibilihd:id/count_down"]',
       snapshotUrls: 'https://i.gkd.li/i/13031261',
     },

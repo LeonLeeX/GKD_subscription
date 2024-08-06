@@ -31,7 +31,7 @@ export default defineGkdApp({
       key: 1,
       name: '局部广告',
       activityIds: 'com.estrongs.android.pop.view.FileExplorerActivity',
-      quickFind: true,
+      fastQuery: true,
       rules: [
         {
           key: 0,

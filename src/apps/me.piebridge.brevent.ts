@@ -10,7 +10,7 @@ export default defineGkdApp({
       desc: '点击取消',
       activityIds: 'me.piebridge.brevent.ui.BreventActivity',
       actionMaximum: 1,
-      quickFind: true,
+      fastQuery: true,
       rules: [
         {
           key: 0,

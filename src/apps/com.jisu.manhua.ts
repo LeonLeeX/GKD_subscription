@@ -7,7 +7,7 @@ export default defineGkdApp({
     {
       key: 1,
       name: '弹窗广告',
-      quickFind: true,
+      fastQuery: true,
       activityIds: 'com.ilike.cartoon.activities.HomeActivity',
       rules: [
         {

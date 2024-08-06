@@ -7,7 +7,7 @@ export default defineGkdApp({
     {
       key: 2,
       name: '信息流广告',
-      quickFind: true,
+      fastQuery: true,
       activityIds: 'cn.xiaochuankeji.zuiyouLite.ui.slide.ActivitySlideDetail',
       rules: [
         {

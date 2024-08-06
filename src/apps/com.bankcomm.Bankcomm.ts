@@ -8,7 +8,7 @@ export default defineGkdApp({
       key: 0,
       name: '全屏广告-首页弹窗广告',
       desc: '点击x',
-      quickFind: true,
+      fastQuery: true,
       activityIds: 'com.bankcomm.module.biz.home.MainActivity',
       rules: '[vid="popup_ad_image"] < * > [vid="popup_close"]',
       snapshotUrls: [

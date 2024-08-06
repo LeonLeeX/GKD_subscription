@@ -11,7 +11,7 @@ export default defineGkdApp({
         {
           key: 0,
           name: '腾讯SDK',
-          quickFind: true,
+          fastQuery: true,
           activityIds: 'com.jz.jzdj.ui.activity.shortvideo.ShortVideoActivity2',
           matches: '[vid="ad_close"]',
           snapshotUrls: 'https://i.gkd.li/i/14391606',

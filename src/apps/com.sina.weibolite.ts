@@ -8,7 +8,7 @@ export default defineGkdApp({
       key: 1,
       name: '分段广告-信息流广告',
       desc: '点击广告卡片右上角x图标,点击[不感兴趣]',
-      quickFind: true,
+      fastQuery: true,
       activityIds: [
         'com.weico.international.activity.MainFragmentActivity',
         'com.weico.international.ui.search.SearchActivity',
@@ -39,7 +39,7 @@ export default defineGkdApp({
     {
       key: 2,
       name: '评价提示',
-      quickFind: true,
+      fastQuery: true,
       matchTime: 10000,
       actionMaximum: 1,
       resetMatch: 'app',

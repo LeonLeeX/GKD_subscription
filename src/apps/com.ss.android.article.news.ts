@@ -46,7 +46,7 @@ export default defineGkdApp({
       resetMatch: 'app',
       rules: [
         {
-          quickFind: true,
+          fastQuery: true,
           activityIds: 'com.ss.android.article.news.activity.MainActivity',
           matches: '[text^="下次打开APP默认进入"]',
           exampleUrls:
@@ -184,7 +184,7 @@ export default defineGkdApp({
       key: 14,
       name: '自动观看广告视频',
       desc: '自动观看广告并等待30s后关闭',
-      quickFind: true,
+      fastQuery: true,
       rules: [
         {
           key: 0,
@@ -205,7 +205,7 @@ export default defineGkdApp({
     },
     {
       key: 15,
-      quickFind: true,
+      fastQuery: true,
       name: '局部广告-底部热榜弹窗',
       desc: '点击X',
       rules: [
@@ -249,7 +249,7 @@ export default defineGkdApp({
       resetMatch: 'app',
       rules: [
         {
-          quickFind: true,
+          fastQuery: true,
           activityIds: 'com.ss.android.article.news.activity.MainActivity',
           matches: '@[desc="关闭"] + [text^="关联"]',
           exampleUrls:

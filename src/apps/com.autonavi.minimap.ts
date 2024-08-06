@@ -9,7 +9,7 @@ export default defineGkdApp({
       name: '更新提示',
       actionMaximum: 1,
       resetMatch: 'app',
-      quickFind: true,
+      fastQuery: true,
       rules: [
         {
           key: 1,
@@ -77,7 +77,7 @@ export default defineGkdApp({
         {
           key: 0,
           name: '【欢迎】弹窗',
-          quickFind: true,
+          fastQuery: true,
           activityIds: 'com.autonavi.map.activity.NewMapActivity',
           matches:
             'ViewGroup[childCount=6] >4 ViewGroup[childCount=5] > @ImageView + View[text!=null] <<n [vid="fragment_container"]',
@@ -88,7 +88,7 @@ export default defineGkdApp({
         {
           key: 1,
           name: '签到弹窗',
-          quickFind: true,
+          fastQuery: true,
           activityIds: 'com.autonavi.map.activity.NewMapActivity',
           matches: '[desc="弹窗"] + [vid="main_map_msg_dialog_close"]',
           snapshotUrls: 'https://i.gkd.li/i/14809993',

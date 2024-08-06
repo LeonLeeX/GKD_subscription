@@ -32,7 +32,7 @@ export default defineGkdApp({
           ],
         },
         {
-          quickFind: true,
+          fastQuery: true,
           matches: '[text="授权提醒"] +3 [text="拒绝"]',
           snapshotUrls: 'https://i.gkd.li/i/13775652',
         },
@@ -57,7 +57,7 @@ export default defineGkdApp({
     {
       key: 12,
       name: '局部广告-右侧悬浮小图标',
-      quickFind: true,
+      fastQuery: true,
       rules: [
         {
           key: 0,

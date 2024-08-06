@@ -8,7 +8,7 @@ export default defineGkdApp({
       key: 3,
       name: '兴趣领域推荐',
       desc: '出现在长久未登录的账户再次登录时',
-      quickFind: true,
+      fastQuery: true,
       activityIds: 'com.sina.weibo.account.interest.InterestActivity',
       rules:
         '[id="com.sina.weibo:id/rl_account_title_bar"] > [id="com.sina.weibo:id/tv_title_bar_skip"][text="跳过"]',
@@ -18,7 +18,7 @@ export default defineGkdApp({
       key: 4,
       name: '精选博主推荐',
       desc: '出现在长久未登录的账户再次登录时',
-      quickFind: true,
+      fastQuery: true,
       activityIds: 'com.sina.weibo.account.recommend.RecommendActivity',
       rules: [
         '[id="com.sina.weibo:id/tv_option"&&text="取消勾选"]',
@@ -33,7 +33,7 @@ export default defineGkdApp({
       key: 5,
       name: '博文内容区与评论区中间卡片式广告',
       desc: '点击右上角x',
-      quickFind: true,
+      fastQuery: true,
       rules: [
         {
           key: 0,
@@ -69,7 +69,7 @@ export default defineGkdApp({
       key: 6,
       name: '评论区博主内容推荐',
       desc: '评论区同一博主其他博文推荐',
-      quickFind: true,
+      fastQuery: true,
       rules: [
         {
           key: 0,
@@ -98,7 +98,7 @@ export default defineGkdApp({
     {
       key: 7,
       name: '局部广告-首页顶部话题分享窗口',
-      quickFind: true,
+      fastQuery: true,
       activityIds: 'com.sina.weibo.MainTabActivity',
       rules:
         '[id="com.sina.weibo:id/tvGuide"] + [id="com.sina.weibo:id/v_close"] + [id="com.sina.weibo:id/iv_close"]',
@@ -107,7 +107,7 @@ export default defineGkdApp({
     {
       key: 8,
       name: '全屏广告-弹窗广告',
-      quickFind: true,
+      fastQuery: true,
       rules: [
         {
           key: 0,
@@ -153,7 +153,7 @@ export default defineGkdApp({
       matchTime: 10000,
       actionMaximum: 1,
       resetMatch: 'app',
-      quickFind: true,
+      fastQuery: true,
       rules:
         '@[id="com.sina.weibo:id/bt_cancel"][text="暂不开启"] + [id="com.sina.weibo:id/bt_confirm"]',
       snapshotUrls: 'https://i.gkd.li/i/12705979',
@@ -162,7 +162,7 @@ export default defineGkdApp({
       key: 10,
       name: '权限提示-通知权限',
       desc: '自动点击x按钮',
-      quickFind: true,
+      fastQuery: true,
       activityIds: 'com.sina.weibo.MainTabActivity',
       rules:
         '[text^="打开通知"] < LinearLayout + ImageView[id="com.sina.weibo:id/right_icon"]',
@@ -172,7 +172,7 @@ export default defineGkdApp({
       key: 11,
       name: '局部广告-首页顶部签到卡片',
       desc: '自动点击x按钮',
-      quickFind: true,
+      fastQuery: true,
       activityIds: 'com.sina.weibo.MainTabActivity',
       rules:
         '[id="com.sina.weibo:id/ll_check_in_container"] < FrameLayout - FrameLayout > TextView + [id="com.sina.weibo:id/v_close"]',
@@ -182,7 +182,7 @@ export default defineGkdApp({
       key: 13,
       name: '局部广告-悬浮广告',
       desc: '自动点击x按钮',
-      quickFind: true,
+      fastQuery: true,
       rules: [
         {
           key: 0,
@@ -224,7 +224,7 @@ export default defineGkdApp({
     {
       key: 14,
       name: '权限提示-定位权限',
-      quickFind: true,
+      fastQuery: true,
       actionMaximum: 1,
       resetMatch: 'app',
       actionMaximumKey: 0,
@@ -247,7 +247,7 @@ export default defineGkdApp({
     },
     {
       key: 17,
-      quickFind: true,
+      fastQuery: true,
       name: '分段广告-信息流广告',
       desc: '点击X-点击"不感兴趣 "/" 不想看到此类内容"',
       activityIds: 'com.sina.weibo.feed.DetailWeiboActivity',
@@ -301,7 +301,7 @@ export default defineGkdApp({
         {
           preKeys: [2],
           key: 92,
-          quickFind: true,
+          fastQuery: true,
           activityIds: 'com.sina.weibo.MainTabActivity',
           matches: '@[clickable=true] >2 [text="不感兴趣"]',
           snapshotUrls: 'https://i.gkd.li/i/14730274',
@@ -312,7 +312,7 @@ export default defineGkdApp({
       key: 18,
       name: 'APP评分弹窗',
       desc: '点击【x】',
-      quickFind: true,
+      fastQuery: true,
       actionMaximum: 1,
       resetMatch: 'app',
       activityIds: 'com.sina.weibo.MainTabActivity',
@@ -321,7 +321,7 @@ export default defineGkdApp({
     },
     {
       key: 19,
-      quickFind: true,
+      fastQuery: true,
       name: '功能类-自动点击查看原图',
       rules: [
         {
@@ -344,7 +344,7 @@ export default defineGkdApp({
     {
       key: 21,
       name: '功能类-超话自动签到',
-      quickFind: true,
+      fastQuery: true,
       rules: [
         {
           key: 0,

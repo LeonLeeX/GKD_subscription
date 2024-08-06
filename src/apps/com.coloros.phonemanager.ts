@@ -7,7 +7,7 @@ export default defineGkdApp({
     {
       key: 3,
       name: '版本更新',
-      quickFind: true,
+      fastQuery: true,
       actionMaximum: 1,
       resetMatch: 'app',
       rules: [

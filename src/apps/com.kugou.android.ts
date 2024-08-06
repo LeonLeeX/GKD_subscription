@@ -96,7 +96,7 @@ export default defineGkdApp({
       key: 4,
       name: '全屏广告-[开启音乐DJ]弹窗',
       desc: '勾选[今日不再提醒]-点击[关闭]',
-      quickFind: true,
+      fastQuery: true,
       matchTime: 10000,
       actionMaximum: 1,
       resetMatch: 'app',

@@ -10,7 +10,7 @@ export default defineGkdApp({
       matchTime: 10000,
       actionMaximum: 1,
       resetMatch: 'app',
-      quickFind: true,
+      fastQuery: true,
       activityIds: 'com.salmon.film.main.ui.MainActivity',
       rules: '[text="可可影视"] +2 * > [text*="知道了"]',
       snapshotUrls: 'https://i.gkd.li/i/13548412',

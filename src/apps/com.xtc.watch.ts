@@ -9,7 +9,7 @@ export default defineGkdApp({
       name: '弹窗提醒',
       desc: '已知包括APP升级提醒与开启通知提醒，自动点击关闭。',
 
-      quickFind: true,
+      fastQuery: true,
       activityIds: [
         'com.xtc.widget.phone.popup.activity.CustomActivity14',
         'com.xtc.widget.phone.popup.activity.CustomActivity13',
@@ -24,7 +24,7 @@ export default defineGkdApp({
       key: 3,
       name: '开启通知提醒',
 
-      quickFind: true,
+      fastQuery: true,
       activityIds: ['com.xtc.watch.view.home.activity.XtcHomeActivity'],
       rules: [
         {

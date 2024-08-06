@@ -47,7 +47,7 @@ export default defineGkdApp({
         },
         {
           key: 1,
-          quickFind: true,
+          fastQuery: true,
           action: 'back',
           matches: '[text="及时获取物流消息"]',
           snapshotUrls: [
@@ -85,7 +85,7 @@ export default defineGkdApp({
         {
           key: 3,
           forcedTime: 3000,
-          quickFind: true,
+          fastQuery: true,
           activityIds: 'com.xunmeng.pinduoduo.ui.activity.HomeActivity',
           matches:
             '@ImageView[visibleToUser=true] < * < * +(1,2) * [text="去抢购"]',
@@ -123,7 +123,7 @@ export default defineGkdApp({
         },
         {
           key: 3,
-          quickFind: true,
+          fastQuery: true,
           activityIds: 'com.xunmeng.pinduoduo.ui.activity.HomeActivity',
           matches:
             '@ImageView[visibleToUser=true] < * +2 * >3 [text="立即抽免单"]',
@@ -131,7 +131,7 @@ export default defineGkdApp({
         },
         {
           key: 4,
-          quickFind: true,
+          fastQuery: true,
           activityIds: 'com.xunmeng.pinduoduo.ui.activity.HomeActivity',
           matches:
             '@ViewGroup[clickable=true] - ViewGroup[childCount=3] >2 [text="其他"]',
@@ -139,7 +139,7 @@ export default defineGkdApp({
         },
         {
           key: 5,
-          quickFind: true,
+          fastQuery: true,
           activityIds: 'com.xunmeng.pinduoduo.activity.NewPageMaskActivity',
           matches: [
             '[text="继续拼单"]',
@@ -166,7 +166,7 @@ export default defineGkdApp({
         {
           key: 1,
           activityIds: 'com.xunmeng.pinduoduo.ui.activity.HomeActivity',
-          quickFind: true,
+          fastQuery: true,
           matches:
             '@ImageView[clickable=true] < ViewGroup + ViewGroup >n [text="送你大额现金"]',
           snapshotUrls: 'https://i.gkd.li/i/13625441',
@@ -188,7 +188,7 @@ export default defineGkdApp({
         {
           key: 4,
           name: '刮奖弹窗',
-          quickFind: true,
+          fastQuery: true,
           action: 'back',
           activityIds: 'com.xunmeng.pinduoduo.ui.activity.HomeActivity',
           matches: '[text="去刮奖"][visibleToUser=true]',
@@ -212,7 +212,7 @@ export default defineGkdApp({
         },
         {
           key: 1,
-          quickFind: true,
+          fastQuery: true,
           activityIds: 'com.xunmeng.pinduoduo.ui.activity.HomeActivity',
           matches:
             '@ViewGroup[clickable=true][visibleToUser=true] - * > [index=2] >2 [text="连领 7 天 今日可领"]',
@@ -261,7 +261,7 @@ export default defineGkdApp({
       desc: '点击关闭',
       rules: [
         {
-          quickFind: true,
+          fastQuery: true,
           activityIds: 'com.xunmeng.pinduoduo.ui.activity.HomeActivity',
           matches:
             'ImageView < ViewGroup < @ViewGroup[clickable=true] +2 * >7 [text="领取今日现金"]',
@@ -277,7 +277,7 @@ export default defineGkdApp({
       desc: '点击关闭',
       rules: [
         {
-          quickFind: true,
+          fastQuery: true,
           activityIds: 'com.xunmeng.pinduoduo.activity.NewPageActivity',
           matches: '[vid="iv_float_window_close"]',
           exampleUrls:
@@ -289,7 +289,7 @@ export default defineGkdApp({
     {
       key: 9,
       name: '分段广告-多多视频每日自动签到',
-      quickFind: true,
+      fastQuery: true,
       matchTime: 10000,
       actionMaximum: 1,
       activityIds: 'com.xunmeng.pinduoduo.ui.activity.HomeActivity',
@@ -318,7 +318,7 @@ export default defineGkdApp({
       key: 10,
       name: '局部广告-多多视频-划到广告自动跳过',
       desc: '点击返回自动刷新，从而跳过广告',
-      quickFind: true,
+      fastQuery: true,
       activityIds: 'com.xunmeng.pinduoduo.ui.activity.HomeActivity',
       rules: [
         {
@@ -354,7 +354,7 @@ export default defineGkdApp({
       name: '功能类-自动点击原图',
       activityIds:
         'com.xunmeng.pinduoduo.app_album.album.MultiImageSelectorActivity',
-      quickFind: true,
+      fastQuery: true,
       rules: '@[text="原图"][checked=false] + [text="发送"]',
       snapshotUrls: [
         'https://i.gkd.li/i/13925378', // checked=false
@@ -409,7 +409,7 @@ export default defineGkdApp({
       key: 13,
       name: '全屏广告-[个性化推荐]弹窗',
       desc: '点击[取消]',
-      quickFind: true,
+      fastQuery: true,
       actionMaximum: 1,
       resetMatch: 'app',
       rules: [

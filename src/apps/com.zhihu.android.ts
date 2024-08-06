@@ -8,7 +8,7 @@ export default defineGkdApp({
       key: 6,
       name: '分段广告-信息流广告',
       desc: '点击关闭-点击内容不感兴趣',
-      quickFind: true,
+      fastQuery: true,
       activityIds: [
         'com.zhihu.android.mixshortcontainer.MixShortContainerActivity',
         'com.zhihu.android.app.ui.activity.HostActivity',
@@ -106,7 +106,7 @@ export default defineGkdApp({
       desc: '点击关闭',
       rules: [
         {
-          quickFind: true,
+          fastQuery: true,
           activityIds: 'com.zhihu.android.app.ui.activity.MainActivity',
           matches: ['[vid="ad_container"]', '[vid="img_close_focus"]'],
           exampleUrls:
@@ -119,7 +119,7 @@ export default defineGkdApp({
       key: 10,
       name: '权限提示-通知权限',
       desc: '点击x按钮',
-      quickFind: true,
+      fastQuery: true,
       actionMaximum: 1,
       resetMatch: 'app',
       actionMaximumKey: 0,
@@ -145,7 +145,7 @@ export default defineGkdApp({
       key: 12,
       name: '全屏广告-弹窗广告',
       desc: '点击关闭',
-      quickFind: true,
+      fastQuery: true,
       rules: [
         {
           key: 0,
@@ -178,7 +178,7 @@ export default defineGkdApp({
         {
           key: 0,
           name: '发想法赢奖励弹窗',
-          quickFind: true,
+          fastQuery: true,
           activityIds: 'com.zhihu.android.topic.TopicActivity',
           matches: '@ImageView - ViewGroup <<n [vid="scene_container"]',
           snapshotUrls: 'https://i.gkd.li/i/14020339',
@@ -198,7 +198,7 @@ export default defineGkdApp({
       key: 14,
       name: '局部广告-信息流广告',
       desc: '点击关闭',
-      quickFind: true,
+      fastQuery: true,
       rules: [
         {
           key: 0,
@@ -283,7 +283,7 @@ export default defineGkdApp({
     {
       key: 15,
       name: '局部广告-悬浮广告',
-      quickFind: true,
+      fastQuery: true,
       rules: [
         {
           key: 0,
@@ -314,7 +314,7 @@ export default defineGkdApp({
       key: 16,
       name: '更新提示',
       matchTime: 10000,
-      quickFind: true,
+      fastQuery: true,
       resetMatch: 'app',
       actionMaximum: 1,
       rules: [
@@ -345,7 +345,7 @@ export default defineGkdApp({
       name: '功能类-热榜页自动点击[展开更多]',
       rules: [
         {
-          quickFind: true,
+          fastQuery: true,
           activityIds: 'com.zhihu.android.app.ui.activity.MainActivity',
           matches: '@[clickable=true] >2 [text="展开更多"]',
           exampleUrls:

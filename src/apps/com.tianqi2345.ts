@@ -11,7 +11,7 @@ export default defineGkdApp({
         {
           key: 0,
           name: '快手SDK',
-          quickFind: true,
+          fastQuery: true,
           activityIds: 'com.tianqi2345.activity.NewMainActivity',
           matches: '@ImageView[clickable=true] + * > [text="广告"]',
           snapshotUrls: 'https://i.gkd.li/i/14391630',

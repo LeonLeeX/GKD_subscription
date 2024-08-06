@@ -8,7 +8,7 @@ export default defineGkdApp({
       key: 1,
       name: '局部广告-首页-右侧浮窗广告',
       desc: '点击x',
-      quickFind: true,
+      fastQuery: true,
       activityIds: 'com.hihonor.servicecardcenter.activity.LauncherActivity',
       rules: '[vid="float_cancel"]',
       exampleUrls:

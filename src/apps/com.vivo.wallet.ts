@@ -9,7 +9,7 @@ export default defineGkdApp({
       name: '通知权限授权弹窗',
       activityIds: 'com.vivo.wallet.bookkeep.activity.BookKeepMainActivity',
 
-      quickFind: true,
+      fastQuery: true,
       matchTime: 10000,
       actionMaximum: 1,
       resetMatch: 'activity',

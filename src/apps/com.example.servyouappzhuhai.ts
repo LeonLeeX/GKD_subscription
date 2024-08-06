@@ -8,7 +8,7 @@ export default defineGkdApp({
       key: 0,
       name: '通知权限授权弹窗',
 
-      quickFind: true,
+      fastQuery: true,
       matchTime: 10000,
       actionMaximum: 1,
       resetMatch: 'activity',

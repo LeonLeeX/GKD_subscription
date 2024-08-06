@@ -43,7 +43,7 @@ export default defineGkdApp({
         {
           key: 2,
           activityIds: 'com.hunantv.imgo.activity.MainActivity',
-          quickFind: true,
+          fastQuery: true,
           matches:
             '[id="com.hunantv.imgo.activity:id/ivPromotion"] + [id="com.hunantv.imgo.activity:id/btnClose"]',
           snapshotUrls: 'https://i.gkd.li/i/13761169',

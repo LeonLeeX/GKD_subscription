@@ -22,7 +22,7 @@ export default defineGkdApp({
     {
       key: 8,
       name: '朋友推荐弹窗',
-      quickFind: true,
+      fastQuery: true,
       actionMaximum: 1,
       resetMatch: 'app',
       activityIds: ['com.ss.android.ugc.aweme.main.MainActivity'],
@@ -32,7 +32,7 @@ export default defineGkdApp({
     },
     {
       key: 9,
-      quickFind: true,
+      fastQuery: true,
       name: '通知提示-消息提醒弹窗',
       desc: '点击暂不开启',
       rules: [

@@ -9,7 +9,7 @@ export default defineGkdApp({
       name: '更新提示',
       matchTime: 10000,
       resetMatch: 'app',
-      quickFind: true,
+      fastQuery: true,
       actionMaximum: 1,
       rules: [
         {
@@ -22,7 +22,7 @@ export default defineGkdApp({
       key: 2,
       name: '通知提示-同意消息通知',
       desc: '点击【继续】',
-      quickFind: true,
+      fastQuery: true,
       activityIds: 'org.telegram.ui.LaunchActivity',
       rules: '[text="打开通知"] +n [text="继续"]',
       snapshotUrls: 'https://i.gkd.li/i/14048218',

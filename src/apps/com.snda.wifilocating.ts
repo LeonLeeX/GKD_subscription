@@ -11,7 +11,7 @@ export default defineGkdApp({
       rules: [
         {
           key: 0,
-          quickFind: true,
+          fastQuery: true,
           activityIds: 'com.lantern.start.main.activity.HomeMainActivity',
           matches: '[vid="interstitial_close_iv"]',
           snapshotUrls: 'https://i.gkd.li/i/14032794',
@@ -25,7 +25,7 @@ export default defineGkdApp({
         },
         {
           key: 2,
-          quickFind: true,
+          fastQuery: true,
           activityIds: 'com.zm.wfsdk.core.activity.WfInterstitialActivity',
           matches: '[vid="wf_interstitial_close_iv"]',
           snapshotUrls: 'https://i.gkd.li/i/14927523',
@@ -44,7 +44,7 @@ export default defineGkdApp({
       name: '全屏广告-连接 WiFi 后弹出的广告',
       desc: '点击关闭',
       activityIds: 'com.wifitutu.ui.tools.SpeedUpBActivity',
-      quickFind: true,
+      fastQuery: true,
       rules: [
         {
           key: 0,
@@ -56,7 +56,7 @@ export default defineGkdApp({
     {
       key: 3,
       name: '功能类-加速成功自动返回',
-      quickFind: true,
+      fastQuery: true,
       activityIds: 'com.wifitutu.ui.tools.SpeedUpActivity',
       rules: '[vid="success_desc"] + [vid="back_layout"]',
       snapshotUrls: 'https://i.gkd.li/i/14811492',
@@ -67,7 +67,7 @@ export default defineGkdApp({
       rules: [
         {
           key: 0,
-          quickFind: true,
+          fastQuery: true,
           activityIds: 'com.wifitutu.ui.main.MainActivity',
           matches: '[vid="img_close"]',
           snapshotUrls: 'https://i.gkd.li/i/15284722',
@@ -80,7 +80,7 @@ export default defineGkdApp({
       rules: [
         {
           key: 0,
-          quickFind: true,
+          fastQuery: true,
           activityIds: 'com.wifitutu.ui.main.MainActivity',
           matches: '@* - [vid="native_express_ad_logo_tv"]',
           snapshotUrls: 'https://i.gkd.li/i/15284730',

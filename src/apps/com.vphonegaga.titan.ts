@@ -7,7 +7,7 @@ export default defineGkdApp({
     {
       key: 1,
       name: '广告弹窗',
-      quickFind: true,
+      fastQuery: true,
       activityIds: 'com.vphonegaga.titan.MyNativeActivity1',
       rules: '@Image < View +2 [text="反馈"]',
       snapshotUrls: 'https://i.gkd.li/i/13292911',

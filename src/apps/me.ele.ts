@@ -7,7 +7,7 @@ export default defineGkdApp({
     {
       key: 1,
       name: '权限提示-更新权限',
-      quickFind: true,
+      fastQuery: true,
       actionMaximum: 1,
       resetMatch: 'app',
       rules: ['[text*="更新应用版本"]', '[text="取消"]'],
@@ -23,7 +23,7 @@ export default defineGkdApp({
         {
           key: 0,
           name: '红包弹窗1',
-          quickFind: true,
+          fastQuery: true,
           activityIds: [
             'me.ele.component.pops2.Pops2MistDialog',
             'me.ele.component.webcontainer.view.AppUCWebActivity',
@@ -54,7 +54,7 @@ export default defineGkdApp({
         {
           key: 2,
           name: '红包弹窗3',
-          quickFind: true,
+          fastQuery: true,
           matches:
             '@ViewGroup[index=2][clickable=true] <3 ViewGroup < ViewGroup < ViewGroup[vid="id_magex_mist_view"]',
           exampleUrls:
@@ -66,7 +66,7 @@ export default defineGkdApp({
     {
       key: 4,
       name: '全屏广告-活动弹窗',
-      quickFind: true,
+      fastQuery: true,
       rules: [
         {
           key: 1,
@@ -110,7 +110,7 @@ export default defineGkdApp({
     {
       key: 5,
       name: '付款后广告弹窗',
-      quickFind: true,
+      fastQuery: true,
       activityIds: 'me.ele.component.pops2.TransparentAppWebActivity',
       rules: 'bb Button[text="关闭"]',
       snapshotUrls: 'https://i.gkd.li/i/13205301',
@@ -118,7 +118,7 @@ export default defineGkdApp({
     {
       key: 6,
       name: '吃货卡续费弹窗',
-      quickFind: true,
+      fastQuery: true,
       activityIds: 'me.ele.component.webcontainer.view.AppUCWebActivity',
       rules: '@View + View >2 [text="买校园版超级吃货卡"]',
       snapshotUrls: 'https://i.gkd.li/i/13295007',
@@ -126,7 +126,7 @@ export default defineGkdApp({
     {
       key: 7,
       name: '局部广告-首页底部浮窗广告',
-      quickFind: true,
+      fastQuery: true,
       activityIds: 'me.ele.application.ui.Launcher.LauncherActivity',
       rules:
         '@ViewGroup[childCount=0][clickable=true] - ViewGroup[childCount=3] <<n [id="me.ele:id/id_magex_mist_view"]',
@@ -136,7 +136,7 @@ export default defineGkdApp({
       key: 8,
       name: '权限提示-定位权限',
       desc: '自动点击X',
-      quickFind: true,
+      fastQuery: true,
       rules: [
         {
           key: 0,
@@ -154,7 +154,7 @@ export default defineGkdApp({
     },
     {
       key: 9,
-      quickFind: true,
+      fastQuery: true,
       name: '通知提示-获取订单信息通知',
       desc: '点击X',
       rules: [
@@ -189,7 +189,7 @@ export default defineGkdApp({
       resetMatch: 'app',
       rules: [
         {
-          quickFind: true,
+          fastQuery: true,
           activityIds: 'me.ele.foodchannel.page.WMChannelNativeActivity',
           matches: [
             '[text*="小调研"]',

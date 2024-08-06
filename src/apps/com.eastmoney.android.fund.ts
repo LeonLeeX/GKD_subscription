@@ -44,7 +44,7 @@ export default defineGkdApp({
       key: 5,
       name: '全屏广告-广告弹窗',
       desc: '点击关闭',
-      quickFind: true,
+      fastQuery: true,
       activityIds:
         'com.eastmoney.android.fund.centralis.activity.FundRootActivity',
       rules: [

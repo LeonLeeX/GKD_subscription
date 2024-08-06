@@ -12,7 +12,7 @@ export default defineGkdApp({
           key: 0,
           activityIds:
             'com.taobao.cainiao.logistic.ui.view.LogisticDetailActivity',
-          quickFind: true,
+          fastQuery: true,
           matches: '[id="com.cainiao.wireless:id/draw_dialog_iv_close"]',
           snapshotUrls: [
             'https://i.gkd.li/i/12914371',
@@ -29,7 +29,7 @@ export default defineGkdApp({
         },
         {
           key: 2,
-          quickFind: true,
+          fastQuery: true,
           activityIds:
             'com.cainiao.wireless.homepage.view.activity.HomePageActivity',
           matches: '[vid="dialog_full_image_close"]',
@@ -54,7 +54,7 @@ export default defineGkdApp({
     {
       key: 4,
       name: '更新提示',
-      quickFind: true,
+      fastQuery: true,
       activityIds:
         'com.cainiao.wireless.homepage.view.activity.HomePageActivity',
       rules: '[text="确认"] - [text="取消"]',
@@ -64,7 +64,7 @@ export default defineGkdApp({
       key: 5,
       name: '权限提示-通知权限',
       desc: '自动点击关闭。',
-      quickFind: true,
+      fastQuery: true,
       activityIds:
         'com.cainiao.wireless.homepage.view.activity.HomePageActivity',
       rules: '[id="com.cainiao.wireless:id/gg_dialog_base_close"]',
@@ -73,7 +73,7 @@ export default defineGkdApp({
     {
       key: 6,
       name: '评价提示',
-      quickFind: true,
+      fastQuery: true,
       actionMaximum: 1,
       resetMatch: 'app',
       rules: '@[text="取消"] + [text="好评"]',
@@ -86,7 +86,7 @@ export default defineGkdApp({
       key: 7,
       name: '全屏广告-今日手气红包',
       desc: '点击右上角X',
-      quickFind: true,
+      fastQuery: true,
       matchTime: 10000,
       actionMaximum: 1,
       resetMatch: 'app',
@@ -102,7 +102,7 @@ export default defineGkdApp({
       desc: '点击[立即查看]',
       rules: [
         {
-          quickFind: true,
+          fastQuery: true,
           activityIds:
             'com.cainiao.wireless.homepage.view.activity.HomePageActivity',
           matches: '@[text="立即查看"] < * - * >2 [text="您是否要查询包裹"]',

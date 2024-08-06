@@ -13,7 +13,7 @@ export default defineGkdApp({
       rules: [
         {
           key: 0,
-          quickFind: true,
+          fastQuery: true,
           name: '【跳过+倒计时】型',
           matches: 'TextView[text^="跳过"][text.length<=10]',
           snapshotUrls: [
@@ -31,7 +31,7 @@ export default defineGkdApp({
         },
         {
           key: 2,
-          quickFind: true,
+          fastQuery: true,
           name: '【x+关闭】型',
           matches:
             'TextView[text="广告"] - @LinearLayout[clickable=true] > [text="关闭"]',
@@ -202,7 +202,7 @@ export default defineGkdApp({
         {
           key: 1,
           name: '评论区左侧悬浮广告',
-          quickFind: true,
+          fastQuery: true,
           activityIds: 'com.baidu.tieba.pb.pb.main.PbActivity',
           matches: 'LinearLayout[childCount=2] > @ImageView + [text="广告"]',
           snapshotUrls: 'https://i.gkd.li/i/13296280',
@@ -228,7 +228,7 @@ export default defineGkdApp({
       actionMaximum: 1,
       rules: [
         {
-          quickFind: true,
+          fastQuery: true,
           activityIds: 'com.baidu.tieba.pb.pb.main.PbActivity',
           matches: '[vid="tip_close"]',
           exampleUrls:
@@ -272,7 +272,7 @@ export default defineGkdApp({
       actionMaximum: 1,
       rules: [
         {
-          quickFind: true,
+          fastQuery: true,
           activityIds: 'com.baidu.tieba.pb.pb.main.PbActivity',
           matches: '@ImageView[clickable=true] -2 [text="进入话题查看更多"]',
           exampleUrls:

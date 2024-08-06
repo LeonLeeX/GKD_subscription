@@ -29,7 +29,7 @@ export default defineGkdApp({
         },
         {
           key: 1,
-          quickFind: true,
+          fastQuery: true,
           position: {
             left: 'width * 0.9223',
             top: 'width * 0.0349',
@@ -45,7 +45,7 @@ export default defineGkdApp({
           preKeys: [0],
           key: 25,
           name: '点击[关闭]',
-          quickFind: true,
+          fastQuery: true,
           matches: '[text^="关闭"][clickable=true]',
           snapshotUrls: [
             'https://i.gkd.li/i/12907642', // text="关闭该广告"
@@ -56,7 +56,7 @@ export default defineGkdApp({
           preKeys: [0],
           key: 26,
           name: '点击[Close]',
-          quickFind: true,
+          fastQuery: true,
           matches: '[text*="Close"][clickable=true]',
           snapshotUrls: [
             'https://i.gkd.li/i/14207480',
@@ -67,7 +67,7 @@ export default defineGkdApp({
           preKeys: [0],
           key: 27,
           name: '点击[關閉此廣告]',
-          quickFind: true,
+          fastQuery: true,
           matches: '[text="關閉此廣告"][clickable=true]',
           snapshotUrls: 'https://i.gkd.li/i/13791202',
         },
@@ -75,7 +75,7 @@ export default defineGkdApp({
           preKeys: [0, 1],
           key: 28,
           name: '点击[关闭该广告]',
-          quickFind: true,
+          fastQuery: true,
           matches:
             '@LinearLayout[index=1][clickable=true] <2 * < * - [text*="广告"]',
           snapshotUrls: [
@@ -88,7 +88,7 @@ export default defineGkdApp({
           preKeys: [0],
           key: 29,
           name: '点击[Close the ad]',
-          quickFind: true,
+          fastQuery: true,
           matches: '@LinearLayout[clickable=true] > [text*="Close"]',
           snapshotUrls: [
             'https://i.gkd.li/i/12905838',
@@ -131,7 +131,7 @@ export default defineGkdApp({
 
       key: 1,
       name: '功能类-电脑微信快捷自动登录',
-      quickFind: true,
+      fastQuery: true,
       matchTime: 10000,
       actionMaximum: 1,
       resetMatch: 'activity',
@@ -149,7 +149,7 @@ export default defineGkdApp({
       key: 2,
       name: '功能类-自动授权登录',
       desc: '自动允许使用头像昵称等',
-      quickFind: true,
+      fastQuery: true,
       matchTime: 10000,
       actionMaximum: 1,
       activityIds: [
@@ -171,7 +171,7 @@ export default defineGkdApp({
     {
       key: 4,
       name: '功能类-微信读书网页版扫码登录自动授权',
-      quickFind: true,
+      fastQuery: true,
       matchTime: 10000,
       actionMaximum: 1,
       resetMatch: 'activity',
@@ -265,7 +265,7 @@ export default defineGkdApp({
     {
       key: 11,
       name: '功能类-网页版文件传输助手扫码自动授权',
-      quickFind: true,
+      fastQuery: true,
       matchTime: 10000,
       actionMaximum: 1,
       resetMatch: 'activity',
@@ -289,7 +289,7 @@ export default defineGkdApp({
             'https://i.gkd.li/i/12686641', // 未选中
             'https://i.gkd.li/i/12840865', // 未选中
             'https://i.gkd.li/i/12686640', // 已选中
-            'https://i.gkd.li/i/14654129', // 不能对text使用quickFind
+            'https://i.gkd.li/i/14654129', // 不能对text使用fastQuery
           ],
         },
       ],
@@ -302,13 +302,13 @@ export default defineGkdApp({
       rules: 'Button[text^="查看原图"][clickable=true]',
       snapshotUrls: [
         'https://i.gkd.li/i/13523031',
-        'https://i.gkd.li/i/14654029', // 不能对text使用quickFind
+        'https://i.gkd.li/i/14654029', // 不能对text使用fastQuery
       ],
     },
     {
       key: 10,
       name: '开屏广告-微信小程序',
-      quickFind: true,
+      fastQuery: true,
       matchTime: 10000,
       activityIds: [
         'com.tencent.mm.plugin.appbrand.ui.AppBrandUI',
@@ -358,7 +358,7 @@ export default defineGkdApp({
         {
           key: 0,
           name: '【广告】0',
-          quickFind: true,
+          fastQuery: true,
           matches:
             'FrameLayout[childCount=3] >n FrameLayout > FrameLayout > [text="广告"][visibleToUser=true]',
           excludeMatches:
@@ -398,7 +398,7 @@ export default defineGkdApp({
     {
       key: 17,
       name: '青少年模式',
-      quickFind: true,
+      fastQuery: true,
       actionMaximum: 1,
       resetMatch: 'app',
       rules: [
@@ -446,7 +446,7 @@ export default defineGkdApp({
       rules: [
         {
           key: 0,
-          quickFind: true,
+          fastQuery: true,
           activityIds:
             'com.tencent.mm.plugin.brandservice.ui.timeline.BizTimeLineUI',
           matches: '@[clickable=true] > [text="展开更早的消息"]',
@@ -464,7 +464,7 @@ export default defineGkdApp({
       name: '功能类-付款后自动点击完成/返回商家',
       rules: [
         {
-          quickFind: true,
+          fastQuery: true,
           activityIds: 'com.tencent.mm.framework.app.UIPageFragmentActivity',
           matches:
             '[vid="kinda_button_impl_wrapper"][desc="完成" || desc="返回商家"]',
@@ -484,7 +484,7 @@ export default defineGkdApp({
       desc: '点击[解锁]',
       rules: [
         {
-          quickFind: true,
+          fastQuery: true,
           activityIds: 'com.tencent.mm.plugin.webwx.ui.WebWXUnlockUI',
           matches: '[text="解锁"]',
           exampleUrls:
@@ -498,7 +498,7 @@ export default defineGkdApp({
       name: '功能类-自动语音转文字',
       desc: '自动点击语音转文字',
       activityIds: 'com.tencent.mm.ui.LauncherUI',
-      quickFind: true,
+      fastQuery: true,
       rules: [
         {
           key: 0,
@@ -515,7 +515,7 @@ export default defineGkdApp({
       name: '分段广告-视频号-评论区广告',
       desc: 'GKD1.7.0可用',
       activityIds: 'com.tencent.mm.plugin.finder.ui.FinderHomeAffinityUI',
-      quickFind: true,
+      fastQuery: true,
       rules: [
         {
           key: 0,
@@ -544,7 +544,7 @@ export default defineGkdApp({
       desc: '点击关闭',
       rules: [
         {
-          quickFind: true,
+          fastQuery: true,
           activityIds: 'com.tencent.mm.plugin.webview.ui.tools.MMWebViewUI',
           matches:
             '@TextView[clickable=true] + * > [text^="使用 APP"] <<n [id="android:id/content"]',
@@ -563,7 +563,7 @@ export default defineGkdApp({
       resetMatch: 'app',
       rules: [
         {
-          quickFind: true,
+          fastQuery: true,
           activityIds: 'com.tencent.mm.pluginsdk.permission.PermissionActivity',
           matches: ['[text="权限申请"]', '[text="取消"]'],
           exampleUrls:
@@ -575,7 +575,7 @@ export default defineGkdApp({
     {
       key: 33,
       name: '青少年模式-视频号-青少年模式弹窗',
-      quickFind: true,
+      fastQuery: true,
       activityIds: 'com.tencent.mm.plugin.finder.ui.FinderMultiTaskRouterUI',
       rules: '[text*="青少年模式"] +3 [text="我知道了"]',
       snapshotUrls: 'https://i.gkd.li/i/14735456',
@@ -583,7 +583,7 @@ export default defineGkdApp({
     {
       key: 36,
       name: '功能类-付款时自动点击[支付]',
-      quickFind: true,
+      fastQuery: true,
       actionMaximum: 1,
       activityIds: 'com.tencent.mm.framework.app.UIPageFragmentActivity',
       rules: [

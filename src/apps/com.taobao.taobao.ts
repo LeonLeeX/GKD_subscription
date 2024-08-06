@@ -10,7 +10,7 @@ export default defineGkdApp({
       rules: [
         {
           key: 0,
-          quickFind: true,
+          fastQuery: true,
           activityIds: [
             'com.taobao.tao.welcome.Welcome',
             'com.taobao.tao.TBMainActivity',
@@ -35,7 +35,7 @@ export default defineGkdApp({
     {
       key: 2,
       name: '局部广告-消息页面-热门活动卡片',
-      quickFind: true,
+      fastQuery: true,
       activityIds: 'com.taobao.tao.welcome.Welcome',
       rules: 'View[desc.length>0] +2n FrameLayout > TextView[text="퀺"]',
       snapshotUrls: [
@@ -61,7 +61,7 @@ export default defineGkdApp({
       key: 7,
       name: '功能类-关闭小额免密支付开关',
       actionMaximum: 1,
-      quickFind: true,
+      fastQuery: true,
       activityIds: 'com.alipay.android.msp.ui.views.MspContainerActivity',
       rules:
         '@CheckBox[checked=true][checked=true] < * - [text~="开通(.*)免密支付"]',
@@ -73,7 +73,7 @@ export default defineGkdApp({
       key: 8,
       name: '权限提示-通知权限',
       desc: '自动点击关闭',
-      quickFind: true,
+      fastQuery: true,
       actionMaximum: 1,
       resetMatch: 'app',
       rules:
@@ -88,7 +88,7 @@ export default defineGkdApp({
       key: 9,
       name: '功能类-各级页面-添加到首页弹窗',
       desc: '自动点击退出',
-      quickFind: true,
+      fastQuery: true,
       activityIds: [
         'com.taobao.themis.container.app.TMSActivity',
         'com.alibaba.triver.container.TriverMainActivity',
@@ -117,7 +117,7 @@ export default defineGkdApp({
     {
       key: 12,
       name: '更新提示',
-      quickFind: true,
+      fastQuery: true,
       actionMaximum: 1,
       resetMatch: 'app',
       rules: '[vid="update_imageview_cancel_v2"]',
@@ -131,7 +131,7 @@ export default defineGkdApp({
       key: 13,
       name: '功能类-小额免密支付弹窗',
       desc: '点击关闭',
-      quickFind: true,
+      fastQuery: true,
       activityIds: 'com.alipay.android.msp.ui.views.MspContainerActivity',
       rules: '@[text="关闭"] < * <3 * < * + * >3 [text$="小额免密支付"]',
       snapshotUrls: 'https://i.gkd.li/i/13438414',
@@ -157,7 +157,7 @@ export default defineGkdApp({
       key: 15,
       name: '权限提示-悬浮窗权限',
       desc: '点击“否”',
-      quickFind: true,
+      fastQuery: true,
       actionMaximum: 1,
       resetMatch: 'app',
       activityIds:
@@ -175,7 +175,7 @@ export default defineGkdApp({
     {
       key: 16,
       name: '全屏广告-花呗升级报送征信',
-      quickFind: true,
+      fastQuery: true,
       matchTime: 10000,
       actionMaximum: 1,
       resetMatch: 'app',
@@ -214,7 +214,7 @@ export default defineGkdApp({
       key: 18,
       name: '局部广告-商品详情页直播悬浮窗',
       desc: '点击关闭',
-      quickFind: true,
+      fastQuery: true,
       matchTime: 10000,
       actionMaximum: 1,
       rules: [

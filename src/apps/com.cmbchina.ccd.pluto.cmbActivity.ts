@@ -7,7 +7,7 @@ export default defineGkdApp({
     {
       key: 2,
       name: '全屏广告-首页弹窗广告',
-      quickFind: true,
+      fastQuery: true,
       matchTime: 10000,
       actionMaximum: 1,
       resetMatch: 'app',
@@ -22,7 +22,7 @@ export default defineGkdApp({
     {
       key: 3,
       name: '局部广告-右侧悬浮广告',
-      quickFind: true,
+      fastQuery: true,
       matchTime: 10000,
       actionMaximum: 2, // 目前只有2个界面会分别弹悬浮窗
       resetMatch: 'app',
@@ -67,7 +67,7 @@ export default defineGkdApp({
       key: 4,
       name: '通知提示-消息页面通知开关',
       desc: '点击x按钮，不开启系统通知',
-      quickFind: true,
+      fastQuery: true,
       matchTime: 10000,
       actionMaximum: 1,
       resetMatch: 'app',
@@ -79,7 +79,7 @@ export default defineGkdApp({
     {
       key: 5,
       name: '权限提示-定位权限',
-      quickFind: true,
+      fastQuery: true,
       actionMaximum: 1,
       resetMatch: 'app',
       rules: '[text="定位服务"] +n * > [text="取消"]',

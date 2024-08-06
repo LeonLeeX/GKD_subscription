@@ -8,7 +8,7 @@ export default defineGkdApp({
       key: 0,
       name: '开屏广告',
       desc: '点击【跳过】',
-      quickFind: true,
+      fastQuery: true,
       rules: '@View <2 FrameLayout <2 FrameLayout < [vid="adContainer"]',
       snapshotUrls: 'https://i.gkd.li/i/14303879',
     },

@@ -10,7 +10,7 @@ export default defineGkdApp({
       matchTime: 10000,
       actionMaximum: 1,
       resetMatch: 'app',
-      quickFind: true,
+      fastQuery: true,
       activityIds: [
         'com.meituan.android.upgrade.ui.',
         'com.meituan.android.upgrade.UpgradeDialogActivity',
@@ -72,7 +72,7 @@ export default defineGkdApp({
         {
           key: 5,
           name: '订单完成后的红包弹窗',
-          quickFind: true,
+          fastQuery: true,
           activityIds:
             'com.sankuai.waimai.bussiness.order.detail.WMOrderDetailActivity',
           matches: '@ImageView[clickable=true] - * >3 [text="开心收下"]',
@@ -93,7 +93,7 @@ export default defineGkdApp({
       name: '订单调查弹窗',
       matchTime: 10000,
       actionMaximum: 1,
-      quickFind: true,
+      fastQuery: true,
       rules: [
         {
           name: '我的页面-小调查',
@@ -150,7 +150,7 @@ export default defineGkdApp({
       key: 8,
       name: '权限提示-通知权限',
       desc: '点击跳过',
-      quickFind: true,
+      fastQuery: true,
       matchTime: 10000,
       actionMaximum: 1,
       resetMatch: 'app',
@@ -198,7 +198,7 @@ export default defineGkdApp({
     {
       key: 12,
       name: '功能类-付款后自动点击完成',
-      quickFind: true,
+      fastQuery: true,
       rules: [
         {
           key: 0,
