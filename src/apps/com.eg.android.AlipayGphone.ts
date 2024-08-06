@@ -177,19 +177,6 @@ export default defineGkdApp({
       ],
     },
     {
-      key: 13,
-      name: '全屏广告-领新年红包弹窗',
-      desc: '点击X',
-      rules: [
-        {
-          activityIds: 'com.eg.android.AlipayGphone.AlipayLogin',
-          matches:
-            'RelativeLayout[childCount=2][desc="全屏广告"] ImageView[desc="关闭"]',
-          snapshotUrls: 'https://i.gkd.li/i/14034152',
-        },
-      ],
-    },
-    {
       key: 14,
       name: '全屏广告-"下次支付用花呗"弹窗',
       desc: '点击"30天不再提醒"',
@@ -238,7 +225,7 @@ export default defineGkdApp({
       ],
     },
     {
-      key: 17,
+      key: 18,
       name: '功能类-关闭免密支付开关',
       actionMaximum: 1,
       rules: [
