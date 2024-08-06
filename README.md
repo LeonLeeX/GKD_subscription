@@ -16,9 +16,9 @@ Adpro-Team维护的GKD订阅 仅启用 `开屏广告` 一类规则, 其它所有
 https://registry.npmmirror.com/@adpro/gkd_subscription/latest/files/dist/Adpro_gkd.json5
 ```
 
-当前版本: v85
+当前版本: v86
 
-当前订阅文件已适配 668 个 APP, 含 1541 应用规则组， 3 全局规则组。
+当前订阅文件已适配 671 个 APP, 含 1551 应用规则组， 3 全局规则组。
 
 查看 [适配规则列表](./dist/README.md)
 
@@ -26,7 +26,11 @@ https://registry.npmmirror.com/@adpro/gkd_subscription/latest/files/dist/Adpro_g
 
 查看 [GKD基础使用、规则编写教程](https://github.com/Snoopy1866/blogs/blob/main/software/gkd/gkd-rule-tutorial/gkd-rule-tutorial.md) By [@Snoopy1866](https://github.com/Snoopy1866)
 
-查看 [李跳跳规则转GKD规则工具](https://ltt2gkd.adproqwq.top) By [@adproqwq(Adpro-Team)](https://github.com/adproqwq)
+查看 [李跳跳规则转GKD规则工具](https://github.com/Adpro-Team/LTT2GKD) By [@adproqwq(Adpro-Team)](https://github.com/adproqwq)
+
+查看 [订阅规则管理工具](https://rules.adproqwq.xyz) By [@adproqwq](https://github.com/adproqwq)
+
+查看 [GKD网页审查工具 for QQNT](https://github.com/adproqwq/LiteLoaderQQNT-GKDInspectForQQNT) By [@adproqwq](https://github.com/adproqwq)
 
 如何编写订阅/贡献此项目 -> [CONTRIBUTING.md](./CONTRIBUTING.md)
 
@@ -48,7 +52,7 @@ https://registry.npmmirror.com/@adpro/gkd_subscription/latest/files/dist/Adpro_g
 
 - [Discord服务器](https://discord.com/invite/FmqFdDngR8)
 
-- adpro_qwq@qq.com 或 adpro@adproqwq.top
+- adpro_qwq@qq.com adpro@adproqwq.top
 
 ---
 
@@ -62,7 +66,7 @@ https://registry.npmmirror.com/@adpro/gkd_subscription/latest/files/dist/Adpro_g
 
 ### 感谢以下开发者的贡献
 
-![img](https://contrib.rocks/image?repo=Adpro-Team/GKD_subscription&_v=85)
+![img](https://contrib.rocks/image?repo=Adpro-Team/GKD_subscription&_v=86)
 
 ---
 
