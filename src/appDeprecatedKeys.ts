@@ -1,6 +1,6 @@
 import { RawDeprecatedKeysSetting } from './types';
 
-export const appDeprecatedKeys: RawDeprecatedKeysSetting[] = [
+const appDeprecatedKeys: RawDeprecatedKeysSetting[] = [
   {
     id: 'air.tv.douyu.android',
     name: '斗鱼',
@@ -672,3 +672,11 @@ export const appDeprecatedKeys: RawDeprecatedKeysSetting[] = [
     deprecatedKeys: [4],
   },
 ];
+
+const map: Map<string, number[]> = new Map();
+
+appDeprecatedKeys.forEach(({ id, deprecatedKeys }) => {
+  map.set(id, deprecatedKeys);
+});
+
+export const appDeprecatedKeysMap = map;
