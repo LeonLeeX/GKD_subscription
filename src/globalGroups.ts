@@ -1,89 +1,59 @@
 import { defineGkdGlobalGroups } from '@gkd-kit/define';
-import { batchImportApps } from '@gkd-kit/tools';
-import { RawApp, RawAppGroup } from '@gkd-kit/api';
-import { commonAppBlackList, systemAppWhiteList } from './globalDefaultApps';
+import * as appList from './globalDefaultApps';
 
-const apps = await batchImportApps(`${import.meta.dirname}/apps`);
-
-// 如果应用规则已有全局规则中的某一类的规则, 则在对应全局规则禁用此应用
-function filterAppsByGroup(apps: RawApp[], groupNamePrefix: string): string[] {
-  return apps
-    .filter(
-      (a) =>
-        a.groups.filter((g: RawAppGroup) => g.name.startsWith(groupNamePrefix))
-          .length > 0,
-    )
-    .map((a) => a.id);
-}
-
-// 设置单独禁用
-const openDiabledAppIds = new Set([
-  ...commonAppBlackList,
-  ...filterAppsByGroup(apps, '开屏广告'),
-]);
-const updateDiabledAppIds = new Set([
-  ...commonAppBlackList,
-  'info.muge.appshare', // AppShare
-  'com.coolapk.market', // 酷安
-  ...filterAppsByGroup(apps, '更新提示'),
-]);
-const youngDiabledAppIds = new Set([
-  ...commonAppBlackList,
-  'xxx.pornhub.fuck', // JavDB
-  'com.netease.cloudmusic', // 网易云音乐 全局规则在 https://i.gkd.li/i/14931708 误触
-  'com.zhihu.android', // 知乎 全局规则在 https://i.gkd.li/i/14964990 误触
-  'com.luna.music', // 汽水音乐 全局规则在 https://i.gkd.li/i/15124801 误触
-  ...filterAppsByGroup(apps, '青少年模式'),
-]);
-
-// 设置系统软件单独启用
-const openEnabledAppIds = new Set([
-  ...systemAppWhiteList,
-  'com.bbk.theme', // i 主题
-  'com.bbk.appstore', // vivo应用商店
-  'com.huawei.appmarket', // 华为应用市场
-  'com.miui.player', //小米音乐
-  'com.tencent.southpole.appstore', // 黑鲨应用市场
-]);
-const updateEnabledAppIds = new Set([...systemAppWhiteList]);
-const youngEnabledAppIds = new Set([...systemAppWhiteList]);
-
-export const orderList: number[] = [
-  -12, -11, -10, -9, -8, -7, -6, -5, -4, -3, -2, -1,
-];
+export const OPEN_AD_ORDER = -10; // 开屏广告
+export const UPDATE_PROMPT_ORDER = -9; // 更新提示
+export const YOUTH_MODE_ORDER = -8; // 青少年模式
 
 export default defineGkdGlobalGroups([
   {
     key: 0,
     name: '开屏广告',
-    order: orderList[0],
-    actionMaximum: 2,
+    order: OPEN_AD_ORDER,
+    fastQuery: true,
+    matchRoot: true,
     matchTime: 10000,
+    actionMaximum: 1,
     resetMatch: 'app',
-    actionCdKey: 0,
     actionMaximumKey: 0,
     rules: [
       {
         key: 0,
-        quickFind: true,
+        excludeMatches: [
+          // 防止在应用的搜索页面误触
+          '[text*="搜索"][text.length<6][visibleToUser=true]',
+          '[(text*="搜索" && text.length<6) || vid~="(?is).*search.*" || (desc*="搜索" && desc.length<6)][visibleToUser=true]',
+        ],
         matches: '[text*="跳过"][text.length<10][visibleToUser=true]',
       },
       {
         key: 1,
+        excludeMatches: [
+          // 防止在应用的搜索页面误触
+          '[text*="搜索"][text.length<6][visibleToUser=true]',
+          '[(text*="搜索" && text.length<6) || vid~="(?is).*search.*" || (desc*="搜索" && desc.length<6)][visibleToUser=true]',
+        ],
         matches:
-          '[childCount=0][visibleToUser=true][((text*="跳过" || text*="跳過" || text~="(?is).*skip.*") && text.length<10) || id~="(?is).*tt_splash_skip_btn" || vid~="(?is).*skip.*" || (vid~="(?is).*count.*" && vid~="(?is).*down.*" && vid!~="(?is).*load.*" && vid!~="(?is).*time.*" && vid!~="(?is).*hour.*" && vid!~="(?is).*minute.*" && vid!~="(?is).*second.*" && vid!~="(?is).*add.*" && vid!~="(?is).*ead.*") || ((desc*="跳过" || desc*="跳過" || desc~="(?is).*skip.*") && desc.length<10)]',
+          '[childCount=0][visibleToUser=true][((text*="跳过" || text*="跳過" || text~="(?is).*skip.*") && text.length<10) || ((desc*="跳过" || desc*="跳過" || desc~="(?is).*skip.*") && desc.length<10) || id~="(?is).*tt_splash_skip_btn" || vid~="(?is).*skip.*" || (vid~="(?is).*count.*" && vid~="(?is).*down.*" && vid!~="(?is).*load.*" && vid!~="(?is).*time.*" && vid!~="(?is).*hour.*" && vid!~="(?is).*minute.*" && vid!~="(?is).*second.*" && vid!~="(?is).*add.*" && vid!~="(?is).*ead.*" && text!~="([01]?[0-9]|2[0-3])[:：][0-5][0-9]")]',
+      },
+      {
+        key: 2,
+        matches:
+          'FrameLayout > FrameLayout[childCount>2] > @View[clickable=true][visibleToUser=true] + TextView[text=null] <<n [id="android:id/content"]',
       },
     ],
-    apps: [...openDiabledAppIds]
+    apps: [...appList.openAdBlackListAppIDs]
       .map((id) => ({ id, enable: false }))
-      .concat([...openEnabledAppIds].map((id) => ({ id, enable: true }))),
+      .concat(
+        [...appList.openAdWhiteListAppIDs].map((id) => ({ id, enable: true })),
+      ),
   },
   {
     key: 1,
     name: '更新提示',
-    order: orderList[2],
-    actionMaximum: 1,
+    order: UPDATE_PROMPT_ORDER,
     matchTime: 10000,
+    actionMaximum: 1,
     resetMatch: 'app',
     rules: [
       {
@@ -95,18 +65,19 @@ export default defineGkdGlobalGroups([
         ],
       },
     ],
-    apps: [...updateDiabledAppIds]
+    apps: [...appList.updateBlackListAppIDs]
       .map((id) => ({ id, enable: false }))
-      .concat([...updateEnabledAppIds].map((id) => ({ id, enable: true }))),
+      .concat(
+        [...appList.updateWhiteListAppIDs].map((id) => ({ id, enable: true })),
+      ),
   },
   {
     key: 2,
     name: '青少年模式',
-    order: orderList[1],
-    actionMaximum: 1,
+    order: YOUTH_MODE_ORDER,
     matchTime: 10000,
+    actionMaximum: 1,
     resetMatch: 'app',
-    actionCdKey: 0,
     rules: [
       {
         key: 0,
@@ -116,8 +87,10 @@ export default defineGkdGlobalGroups([
         ],
       },
     ],
-    apps: [...youngDiabledAppIds]
+    apps: [...appList.yongBlackListAppIDs]
       .map((id) => ({ id, enable: false }))
-      .concat([...youngEnabledAppIds].map((id) => ({ id, enable: true }))),
+      .concat(
+        [...appList.yongWhiteListAppIDs].map((id) => ({ id, enable: true })),
+      ),
   },
 ]);
