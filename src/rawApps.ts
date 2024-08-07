@@ -12,7 +12,7 @@ const rawApps: RawApp[] = [];
 
 apps.forEach((appConfig) => {
   appConfig.groups?.forEach((g: RawAppGroup) => {
-    for (let i of categories) {
+    for (const i of categories) {
       if (g.name.startsWith(i.name)) {
         if (!g.name.startsWith(categories[0].name)) g.enable = false;
         else g.order = OPEN_AD_ORDER;
