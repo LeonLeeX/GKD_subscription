@@ -5,10 +5,18 @@ export default defineGkdApp({
   name: '咪咕视频',
   groups: [
     {
-      key: 2,
-      name: '右下角小广告',
+      key: 1,
+      name: '青少年模式',
+      actionMaximum: 1,
+      resetMatch: 'app',
       fastQuery: true,
-
+      rules: '[id="com.cmcc.cmvideo:id/btn_cancle"]',
+      snapshotUrls: 'https://i.gkd.li/i/12498307',
+    },
+    {
+      key: 2,
+      name: '局部广告-右下角小广告',
+      fastQuery: true,
       activityIds: 'com.cmcc.cmvideo.main.application.CompatibleMainActivity',
       rules: '[id="com.cmcc.cmvideo:id/iv_right_bottom_close"]',
       snapshotUrls: 'https://i.gkd.li/i/12498315',
@@ -16,6 +24,7 @@ export default defineGkdApp({
     {
       key: 3,
       name: '更新提示',
+      matchTime: 10000,
       actionMaximum: 1,
       resetMatch: 'app',
       fastQuery: true,
@@ -24,7 +33,8 @@ export default defineGkdApp({
     },
     {
       key: 4,
-      name: '推送通知权限弹窗',
+      name: '权限提示-通知权限',
+      matchTime: 10000,
       actionMaximum: 1,
       resetMatch: 'app',
       fastQuery: true,
@@ -33,14 +43,17 @@ export default defineGkdApp({
     },
     {
       key: 5,
-      name: '弹窗广告',
-      activityIds: 'com.cmcc.cmvideo.main.application.CompatibleMainActivity',
-
-      rules:
-        '@[id="com.cmcc.cmvideo:id/iv_big_close"] + [id="com.cmcc.cmvideo:id/sdv_big_pic"]',
-      snapshotUrls: [
-        'https://i.gkd.li/i/13276111',
-        'https://i.gkd.li/i/13276122',
+      name: '全屏广告-弹窗广告',
+      rules: [
+        {
+          fastQuery: true,
+          matchRoot: true,
+          activityIds:
+            'com.cmcc.cmvideo.main.application.CompatibleMainActivity',
+          matches: '[vid="iv_big_close"]',
+          exampleUrls: 'https://e.gkd.li/ece7eb54-9b9b-40e2-9402-fc350f4734bb',
+          snapshotUrls: 'https://i.gkd.li/i/16503612',
+        },
       ],
     },
   ],
