@@ -7,7 +7,6 @@ export default defineGkdApp({
     {
       key: 0,
       name: '开屏广告',
-      actionCdKey: 0,
       fastQuery: true,
       matchTime: 10000,
       actionMaximum: 1,
@@ -16,27 +15,27 @@ export default defineGkdApp({
       rules: [
         {
           key: 0,
-          fastQuery: true,
-          matches: '[text*="跳过"][text.length<10][visibleToUser=true]',
-        },
-        {
-          key: -1,
           matches:
-            '[childCount=0][visibleToUser=true][(text.length<10 && (text*="跳过" || text*="跳過" || text*="skip" || text*="Skip")) || id$="tt_splash_skip_btn" || vid*="skip" || vid*="Skip" || desc*="跳过" || desc*="skip" || (vid*="count" && vid*="down" && vid!*="countdown" && vid!*="load" && vid!*="add" && vid!*="ead" && vid!*="time")]',
-        },
-        {
-          key: 1,
-          matches:
-            'FrameLayout > FrameLayout[childCount>2] > @View[clickable=true] + TextView <<n [id="android:id/content"]',
+            'FrameLayout > FrameLayout[childCount>2] > @View[clickable=true][visibleToUser=true] + TextView[text=null] <<n [id="android:id/content"]',
           snapshotUrls: [
             'https://i.gkd.li/i/14560058',
             'https://i.gkd.li/i/14560214',
           ],
         },
         {
+          key: 1,
+          matches: '[text^="跳过"][text.length<=10]',
+          snapshotUrls: [
+            'https://i.gkd.li/i/12642486',
+            'https://i.gkd.li/i/12846496',
+            'https://i.gkd.li/i/12868232',
+          ],
+        },
+        {
           key: 2,
-          matches: '[id="com.xyhui:id/ms_skipView"]',
-          snapshotUrls: 'https://i.gkd.li/i/13197417',
+          action: 'clickCenter',
+          matches: '[vid="ms_skipView"]',
+          snapshotUrls: 'https://i.gkd.li/i/16486847',
         },
       ],
     },
@@ -116,11 +115,10 @@ export default defineGkdApp({
     {
       key: 3,
       name: '更新提示',
+      matchTime: 10000,
+      actionMaximum: 1,
+      resetMatch: 'app',
       fastQuery: true,
-      activityIds: [
-        'com.xyhui.start.PUMainActivity',
-        'com.xyhui.start.LoadingActivity',
-      ],
       rules: 'ImageView[id="com.xyhui:id/closeIv"]',
       snapshotUrls: [
         'https://i.gkd.li/i/12908853',
