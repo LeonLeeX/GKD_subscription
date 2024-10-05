@@ -37,7 +37,8 @@ export default defineGkdApp({
       activityIds: '.ui.activity.scan.AfterPayUseAct',
       rules: [
         {
-          matches: '[vid="tv_automatic_use"] + [vid="switchView"][checked=false]',
+          matches:
+            '[vid="tv_automatic_use"] + [vid="switchView"][checked=false]',
           exampleUrls: 'https://e.gkd.li/23e3fc7e-1668-448d-824e-3e7238b18972',
           snapshotUrls: 'https://i.gkd.li/i/17260785',
         },
