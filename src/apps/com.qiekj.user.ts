@@ -30,7 +30,7 @@ export default defineGkdApp({
       ],
     },
     {
-      key: 1,
+      key: 2,
       name: '功能类-支付自动抵扣',
       desc: '点击【自动抵扣】开关',
       fastQuery: true,
