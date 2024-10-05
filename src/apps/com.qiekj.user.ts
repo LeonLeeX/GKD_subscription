@@ -8,7 +8,6 @@ export default defineGkdApp({
       key: 0,
       name: '开屏广告',
       activityIds: 'com.qiekj.user.MainActivity',
-
       rules: [
         {
           key: 0,
@@ -30,5 +29,19 @@ export default defineGkdApp({
         },
       ],
     },
+    {
+      key: 1,
+      name: '功能类-支付自动抵扣',
+      desc: '点击【自动抵扣】开关',
+      fastQuery: true,
+      activityIds: '.ui.activity.scan.AfterPayUseAct',
+      rules: [
+        {
+          matches: '[vid="switchView"][checked=false]',
+          exampleUrls: 'https://e.gkd.li/23e3fc7e-1668-448d-824e-3e7238b18972',
+          snapshotUrls: 'https://i.gkd.li/i/17260785',
+        },
+      ],
+    }
   ],
 });
