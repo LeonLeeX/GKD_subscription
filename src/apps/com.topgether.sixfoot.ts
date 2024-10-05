@@ -11,7 +11,8 @@ export default defineGkdApp({
         {
           key: 0,
           activityIds: 'Pro.biz.record.RecordMainActivity',
-          matches: '[id="android:id/content"] FrameLayout[index=1][childCount=1] > ImageView',
+          matches:
+            '[id="android:id/content"] FrameLayout[index=1][childCount=1] > ImageView',
           exampleUrls: 'https://e.gkd.li/e15810d3-2b61-4918-aecd-f4d72cd8deeb',
           snapshotUrls: 'https://i.gkd.li/i/17265792',
         },
