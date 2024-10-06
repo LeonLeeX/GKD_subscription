@@ -175,7 +175,7 @@ export default defineGkdApp({
           snapshotUrls: [
             'https://i.gkd.li/i/14559287',
             'https://i.gkd.li/i/17268301',
-          ]
+          ],
         },
         {
           key: 3,
