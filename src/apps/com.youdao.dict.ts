@@ -165,11 +165,17 @@ export default defineGkdApp({
           key: 2,
           name: '单词页面下方广告',
           fastQuery: true,
-          activityIds: 'com.youdao.dict.activity.MainActivity',
+          activityIds: [
+            'com.youdao.dict.activity.MainActivity',
+            '.activity.DictQueryActivity',
+          ],
           matches: '[vid="course_four_course_close"]',
           exampleUrls:
             'https://m.gkd.li/57941037/4045988d-93bb-4aad-80dd-f14da296a214',
-          snapshotUrls: 'https://i.gkd.li/i/14559287',
+          snapshotUrls: [
+            'https://i.gkd.li/i/14559287',
+            'https://i.gkd.li/i/17268301',
+          ]
         },
         {
           key: 3,
