@@ -6,26 +6,41 @@ export default defineGkdApp({
   groups: [
     {
       key: 1,
-      name: '全屏广告',
+      name: '全屏广告-弹窗广告',
+      desc: '点击关闭',
       rules: [
         {
           key: 0,
+          fastQuery: true,
+          activityIds: 'Pro.biz.home.ProMainActivity',
+          matches: '[vid="iv_close"]',
+          exampleUrls: 'https://e.gkd.li/fc4a468d-407f-4a70-add8-26487f35933f',
+          snapshotUrls: 'https://i.gkd.li/i/17265831',
+        },
+        {
+          key: 1,
           activityIds: 'Pro.biz.record.RecordMainActivity',
           matches:
-            '[id="android:id/content"] FrameLayout[index=1][childCount=1] > ImageView',
-          exampleUrls: 'https://e.gkd.li/e15810d3-2b61-4918-aecd-f4d72cd8deeb',
-          snapshotUrls: 'https://i.gkd.li/i/17265792',
+            '[id="android:id/content"] >4 FrameLayout[childCount=2] > FrameLayout[childCount=3] > FrameLayout[childCount=1] > ImageView[childCount=0][text=null]',
+          exampleUrls: 'https://e.gkd.li/01fd3dff-c1e9-42b3-bdb1-05124a67504b',
+          snapshotUrls: 'https://i.gkd.li/i/17265832',
         },
       ],
     },
     {
       key: 2,
-      name: '全屏广告-开通会员弹窗',
-      fastQuery: true,
-      activityIds: 'Pro.biz.home.ProMainActivity',
-      rules: '[vid="iv_pay_vip"] + [vid="iv_close"]',
-      exampleUrls: 'https://e.gkd.li/1a26e4b0-2445-4595-b003-4a3334ae2953',
-      snapshotUrls: 'https://i.gkd.li/i/17265791',
+      name: '局部广告-信息流广告',
+      desc: '点击关闭',
+      rules: [
+        {
+          fastQuery: true,
+          activityIds: 'Pro.biz.home.ProMainActivity',
+          matches:
+            '@ImageView[childCount=0][text=null] < FrameLayout[childCount=1] - LinearLayout > [text="下载应用"]',
+          exampleUrls: 'https://e.gkd.li/32475c6e-888a-4048-b7ed-5b3bc3c1c580',
+          snapshotUrls: 'https://i.gkd.li/i/17268235',
+        },
+      ],
     },
   ],
 });
