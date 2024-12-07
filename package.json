@@ -28,7 +28,6 @@
   },
   "simple-git-hooks": {
     "pre-commit": "pnpm exec lint-staged",
-    "commit-msg": "pnpm exec commitlint --config commitlint.config.ts --edit ${1}",
     "pre-push": "pnpm run check"
   },
   "lint-staged": {
@@ -48,14 +47,11 @@
     "./dist"
   ],
   "dependencies": {
-    "@commitlint/cli": "19.6.0",
-    "@commitlint/config-conventional": "19.6.0",
-    "@commitlint/types": "19.5.0",
-    "@eslint/eslintrc": "^3.1.0",
-    "@eslint/js": "^9.12.0",
+    "@eslint/js": "^9.16.0",
     "@gkd-kit/api": "0.6.0",
     "@gkd-kit/define": "0.0.1",
     "@gkd-kit/tools": "0.5.2",
+    "@types/eslint-config-prettier": "^6.11.3",
     "@types/eslint__js": "8.42.3",
     "@types/node": "22.10.1",
     "eslint": "9.16.0",
@@ -63,16 +59,17 @@
     "eslint-plugin-unused-imports": "4.1.4",
     "json5": "2.2.3",
     "lint-staged": "15.2.10",
-    "prettier": "3.4.1",
+    "prettier": "3.4.2",
     "simple-git-hooks": "2.11.1",
     "tsx": "4.19.2",
     "typescript": "5.7.2",
-    "typescript-eslint": "8.16.0"
+    "typescript-eslint": "8.17.0"
   },
   "volta": {
-    "node": "22.11.0"
+    "node": "22.11.0",
+    "pnpm": "9.15.0"
   },
-  "packageManager": "pnpm@9.14.4",
+  "packageManager": "pnpm@9.15.0",
   "engineStrict": true,
   "engines": {
     "node": ">=22"

@@ -1,3 +1,4 @@
+// @ts-check
 import eslint from '@eslint/js';
 import tsEslint from 'typescript-eslint';
 import unusedImports from 'eslint-plugin-unused-imports';
@@ -11,8 +12,10 @@ export default tsEslint.config(
     plugins: {
       'unused-imports': unusedImports,
     },
+  },
+  {
     rules: {
-      quotes: ['error', 'single', { allowTemplateLiterals: true }],
+      quotes: ['error', 'single', { allowTemplateLiterals: false }],
       'no-unused-vars': 'off',
       '@typescript-eslint/no-unused-vars': 'off',
       'unused-imports/no-unused-imports': 'error',
