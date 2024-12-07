@@ -36,10 +36,11 @@ export default defineGkdApp({
           preKeys: 1,
           name: '分段广告-2',
           fastQuery: true,
-          activityIds: 'com.bytedance.sdk.openadsdk.stub.activity.Stub_Standard_Activity_T',
+          activityIds:
+            'com.bytedance.sdk.openadsdk.stub.activity.Stub_Standard_Activity_T',
           matches: '@* > [text="不感兴趣"]',
           snapshotUrls: 'https://i.gkd.li/i/18048901',
-        }
+        },
       ],
     },
     {
