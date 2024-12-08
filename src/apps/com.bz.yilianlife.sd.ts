@@ -24,7 +24,8 @@ export default defineGkdApp({
         },
         {
           key: 2,
-          activityIds: 'com.sigmob.sdk.base.common.PortraitTransparentAdActivity',
+          activityIds:
+            'com.sigmob.sdk.base.common.PortraitTransparentAdActivity',
           matches: '[id="ad_area"] >2 [id="close_btn"]',
           snapshotUrls: 'https://i.gkd.li/i/18050212',
         },
