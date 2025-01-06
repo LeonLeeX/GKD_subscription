@@ -218,8 +218,7 @@ export default defineGkdApp({
           // Button[desc="开"] 会在出现金币动画时会消失
           matches: 'ImageButton[desc="开"] + Button[desc="开"]',
           snapshotUrls: [
-            'https://i.gkd.li/i/12567697',
-            'https://i.gkd.li/i/12567698', // 额外增加,金币动画的快照,规则不在这个快照上运行
+            'https://i.gkd.li/i/18316041',  // 额外增加,金币动画的快照,规则不在这个快照上运行
           ],
         },
         {
